@@ -5,9 +5,37 @@ h2{
 }
 
 #meta_id{
-    color:blueviolet;
+    color:blueviolet!important;
 }
 
 .meta_class{
     color:rgb(50, 117, 88);
+}
+
+#div_id{
+    color:white;
+    background: red;
+    background: #000;
+    background: #000abc;
+    background: rgb(152, 32, 32);
+    background: rgba(152, 32, 32,0.9);
+    background: rgba(152, 32, 32,.8);
+
+    /* padding: ic bosluk */
+    /* padding: 12px; */
+    /* padding: 12px 24px; */
+    /* padding: 1px 12px 23px 4px; */
+    padding-top:25px;
+    padding-bottom:25px;
+
+    /* margin:dış boşluk */
+    margin:15px 25px;
+
+    /* border:2px solid blue; */
+    border:2px solid rgba(0,5,6,.8);
+
+    /* border: profil resmi*/
+    /* border-radius: 50%; */
+    border-top-left-radius: 25px;
+   
 }
