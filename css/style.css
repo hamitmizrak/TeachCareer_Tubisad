@@ -185,7 +185,7 @@ header{
         width: 49%;
         height:250px;
         background: blue;
-        display:inline-block;
+        float:left;
     }
 }
 
@@ -194,8 +194,8 @@ header{
     .responsive{
         width: 32%;
         height:250px;
-        background: purple;
-        display:inline-block;
+        background: red;
+        float:left;
     }
 }
 
@@ -205,6 +205,6 @@ header{
         width: 24%;
         height:250px;
         background: purple;
-        display:inline-block;
+        float:left;
     }
 }
