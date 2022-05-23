@@ -37,5 +37,12 @@ h2{
     /* border: profil resmi*/
     /* border-radius: 50%; */
     border-top-left-radius: 25px;
+
+    /* font */
+    font-size:.25px;
+    font-size:15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-style: italic;
    
 }
