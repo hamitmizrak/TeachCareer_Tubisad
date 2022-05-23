@@ -1,0 +1,13 @@
+/* external: bütün uygulamada geçerldir */
+
+h2{
+    color:orange;
+}
+
+#meta_id{
+    color:blueviolet;
+}
+
+.meta_class{
+    color:rgb(50, 117, 88);
+}
