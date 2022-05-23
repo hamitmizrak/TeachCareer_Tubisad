@@ -1,5 +1,28 @@
 /* external: bütün uygulamada geçerldir */
 
+/* group selector*/
+
+/* 
+*{}
+div,p{}
+div p{}
+div>p{}
+div~p {}
+div+p{}
+*/
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box; 
+    /*width:100=width+padding+border*/
+    /*
+    width:100;
+    padding:10*2=20
+    border :25*2=50
+    */
+}
+
 h2{
     color:orange;
 }
@@ -74,13 +97,32 @@ div a{
 }
 
 img{
+    margin-left:10%;
     width: 150px;
     height: 90px;
     float: left;
 }
 
+img:hover{
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.8);
+    cursor: pointer;
+}
+
+
 .clear:before{
     content:"";
     clear:both;
     display:block;
+}
+
+ul li{
+    list-style-type: none;
+    display:inline;
+    background:black;
+    color:white;
+    padding:4px;
+}
+
+ul li a{
+    text-decoration: none;
 }

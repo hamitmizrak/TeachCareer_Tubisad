@@ -1,3 +1,5 @@
 Arasındaki fark
 visibility:hidden;
  display:none;
+
+ box-sizing: nedir kullanım yerini gösterelim:
