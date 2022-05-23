@@ -98,14 +98,18 @@ div a{
 
 img{
     margin-left:10%;
-    width: 150px;
-    height: 90px;
+    max-width: 100%;
+    height:auto;
     float: left;
 }
 
 img:hover{
     box-shadow: 1px 1px 5px 1px rgba(0,0,0,.8);
     cursor: pointer;
+    transition: 2s all;
+    transform: rotate(-360deg);
+    width: 210px;
+    height: 160px;
 }
 
 
@@ -125,4 +129,15 @@ ul li{
 
 ul li a{
     text-decoration: none;
+}
+
+
+/* header*/
+header{
+    background-image: url('../picture/resim1.jpg');
+    height: 80vh;
+    background-position: right;
+    background-size:cover;
+    /* clip-path: polygon(0 0,100% 0,100% 100%,0 90%); */
+
 }
