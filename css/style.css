@@ -113,10 +113,33 @@ img:hover{
 }
 
 
+#back_to_top{
+    position:fixed;
+    right:0;
+    bottom:0;
+    margin-right: 3%;
+    margin-bottom:5%;
+    background: black;
+    color:white!important;
+    padding:2px 5px;
+}
+
+#back_to_top:hover{
+    box-shadow: 1px 1px 3px 1px black;
+    transition: 2s all;
+    opacity: .8;
+}
+
+
 .clear:before{
     content:"";
     clear:both;
     display:block;
+}
+
+ul{
+    position:sticky;
+    top:5px;
 }
 
 ul li{
@@ -125,10 +148,12 @@ ul li{
     background:black;
     color:white;
     padding:4px;
+    
 }
 
 ul li a{
     text-decoration: none;
+    
 }
 
 
@@ -139,5 +164,4 @@ header{
     background-position: right;
     background-size:cover;
     /* clip-path: polygon(0 0,100% 0,100% 100%,0 90%); */
-
 }

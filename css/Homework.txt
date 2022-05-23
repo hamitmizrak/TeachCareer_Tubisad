@@ -1,5 +1,7 @@
+CSS3 HomeWork
 Arasındaki fark
 visibility:hidden;
- display:none;
+display:none;
 
  box-sizing: nedir kullanım yerini gösterelim:
+ position: relative ile absolute arasındaki fark
