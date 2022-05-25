@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+</head>
+
+<body class="container bg-dark text-white">
+    <!-- start codes -->
+    <br><br><br><br>
+
+    <div class="container">
+        <p class="display-1 text-upparcase text-center">Form Register</p>
+        <form action="#" method="get">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-md-1">
+                        <label for="id_name" class="form-label">Adınız</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text" class="form-control" id="id_name">
+                        <div id="validation_id" class="text-danger">Adınızı girmediniz</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-1">
+                        <label for="id_surname" class="form-label">Soyadınız</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="text" class="form-control" id="id_surname">
+                        <div id="validation_id" class="text-danger">Soyadınızı girmediniz</div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-1">
+                        <label for="id_name" class="form-label">Email</label>
+                    </div>
+                    <div class="col-md">
+                        <input type="email" class="form-control" id="id_name">
+                        <div id="validation_id" class="text-danger">Emaili girmediniz</div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Bildiğiniz Teknolojiler
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item disabled" href="#">Disabled action</a>
+                            <h6 class="dropdown-header">Section header</h6>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">After divider action</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 mt-3"></div>
+                <div class="col-md-10 mt-3">
+                    <button type="reset" class="btn btn-danger btn-lg">RESET</button>
+                    <button type="button" class="btn btn-primary">SUBMIT</button>
+                </div>
+            </div>
+        </form>
+    </div>
+  
+
+    <!-- ends codes  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
