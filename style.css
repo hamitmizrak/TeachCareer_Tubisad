@@ -61,3 +61,17 @@ p{
 }
 
 /* ############################################################################ */
+
+/* header */
+header{
+    background-image: url("picture/header.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index:-1;
+    height:40rem;
+    padding-top:9rem;
+}
+
+/* main */
+
+/* footer */
