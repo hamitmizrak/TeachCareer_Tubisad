@@ -75,3 +75,9 @@ header{
 /* main */
 
 /* footer */
+footer{
+    min-height: 20rem;
+    width: auto;
+    background-color: black;
+    color:white;
+}
