@@ -1,1 +1,63 @@
-/* font-family: 'Quicksand', sans-serif; */
+/*
+project name: one pages 
+project date: 30-Mayis 2022
+project author: Hamit Mızrak
+project version: v.1
+*/
+/* ############################################################################ */
+/* common property */
+*{
+    margin: 0;
+    padding:0px;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+}
+
+html{
+    font-size:20px;
+}
+
+ul{
+    list-style-type:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    text-align: justify;
+    margin-left:.7rem;
+    margin-right:.7rem;
+}
+
+
+/* ############################################################################ */
+/* line-clamp */
+
+.line_clamp5{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line_clamp6{
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line_clamp7{
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ############################################################################ */
