@@ -38,7 +38,12 @@ p{
 
 /* ############################################################################ */
 /* line-clamp */
-
+.line_clamp3{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .line_clamp5{
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -62,6 +67,20 @@ p{
 
 /* ############################################################################ */
 
+
+/*  nav */
+#logo_div{
+    /* border-radius:50%; */
+   
+}
+
+#logo_div:hover{
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,.6);
+    width: 10rem;
+}
+
+/* ############################################################################ */
+
 /* header */
 header{
     background-image: url("picture/header.jpg");
@@ -78,6 +97,15 @@ header{
 footer{
     min-height: 20rem;
     width: auto;
-    background-color: black;
+    background-color: #3d3d3d;
     color:white;
+}
+
+#address_id i{
+    margin-right:.6rem;
+    color:blueviolet;
+}
+
+#copy_right{
+    background: #2f3337;
 }

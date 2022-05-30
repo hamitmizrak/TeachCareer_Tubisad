@@ -1,1 +1,4 @@
 text-reset: Uğur
+unicode ascii: Muhammed
+background background-color arasındaki fark: Fatih Batuhan
+fast-forward rebase arasında fark : git  Mehmet Ardıç
