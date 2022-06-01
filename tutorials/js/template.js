@@ -18,3 +18,23 @@ console.log(obj)
 document.write(obj)
 
 // ""   ==>   ' '  ==>   ` `
+///////////////////////////////////////////////////////////////
+//Variable
+var variable=44;
+document.write("<br>"+typeof variable)
+document.write("==>"+variable);
+
+variable=55.63;
+document.write("<br>"+typeof variable)
+document.write("==>"+variable);
+
+variable=false;
+document.write("<br>"+typeof variable)
+document.write("==>"+variable);
+
+
+variable="Merhabalar";
+document.write("<br>"+typeof variable)
+document.write("==>"+variable);
+
+
