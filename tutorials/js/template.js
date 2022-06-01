@@ -130,7 +130,7 @@ document.writeln("++++++++++++++++++++++++<br>")
 
 //////////////////////////////////////////////////////////////
 //Random
-document.writeln( Math.round((Math.random()*4+1))+"<br>");
+// document.writeln( Math.round((Math.random()*4+1))+"<br>");
 
 //if else 
 //Sayı bulma oyunu: 1-10 arasında rastgele sayılar olsun bizde tahmin etmeye çalışalım bizim tahmin sayımız 5 olsun eğer biz sayıdan büyükse büyük tahmin eğer sayıdan küçükse küçük tahmin. ve sonunda eğer bulursak kaçıncı tahminde bulduğumuz bize söylesin ?
@@ -138,27 +138,34 @@ document.writeln( Math.round((Math.random()*4+1))+"<br>");
 
 //////////////////////////////////////////////////////////////
 //SAYI
-var number1=44;
-var number2=44.66;
+// var number1=44;
+// var number2=44.66;
 
-//BILIMSEL
-var bilimsel=45E+3;
-document.write(bilimsel+"<br>")
+// //BILIMSEL
+// var bilimsel=45E+3;
+// document.write(bilimsel+"<br>")
 
-//CAST
+// //CAST
 // var number3= Number(prompt("Lütfen bir sayı giriniz"));
-// document.writeln(number3+15);
+//  document.writeln(number3+15);
 
-//Sayı sistemler
-//2-8-16 => 10 tabana çevirme
-var binary=0b001101; //0-1 oluşur
-document.writeln(binary+"<br>")
+// //Sayı sistemler
+// //2-8-16 => 10 tabana çevirme
+// var binary=0b001101; //0-1 oluşur
+// document.writeln(binary+"<br>")
 
-var octal=076; //01234567
-document.writeln(octal+"<br>")
+// var octal=076; //01234567
+// document.writeln(octal+"<br>")
 
-var hexadecimal=0xab; //0123456789abcdef
-document.writeln(hexadecimal+"<br>")
+// var hexadecimal=0xab; //0123456789abcdef
+// document.writeln(hexadecimal+"<br>")
+
+
+//////////////////////////////////////////////////////////////
+//String
+var value=" html5 css3 JAVASCRIPT Bootstrap responsive design";
+
+
 
 
 
