@@ -71,27 +71,27 @@ document.writeln("++++++++++++++++++++++++<br>")
 //CAST: dönüştür
 //Number() ==> SAYI
 //String() ==> KELIME
-var resutl="14",result2="26";
-document.write(resutl+result2+"<br>");
-document.write( Number(resutl)  + Number(result2) +"<br>");
+// var resutl="14",result2="26";
+// document.write(resutl+result2+"<br>");
+// document.write( Number(resutl)  + Number(result2) +"<br>");
 
-//////////////////////////////////////////////////////////////
-//Math: static
-document.write("PI: "+Math.PI+"<br>");
-document.write("E: "+Math.E+"<br>");
-document.write("sin: "+Math.sin(45)+"<br>");
+// //////////////////////////////////////////////////////////////
+// //Math: static
+// document.write("PI: "+Math.PI+"<br>");
+// document.write("E: "+Math.E+"<br>");
+// document.write("sin: "+Math.sin(45)+"<br>");
 
-document.write("Max: "+Math.max([1,2,4])+"<br>");
-document.write("Min: "+Math.min(4,5,2,5,125)+"<br>");
-document.write("Mutlak: "+Math.abs(-44)+"<br>");
-document.write("Karekök: "+Math.sqrt(16)+"<br>");
-document.write("Mutlak-Karekök: "+Math.sqrt(Math.abs(16))+"<br>"); //monad
-document.write("üslü: "+Math.pow(2,5)+"<br>");
+// document.write("Max: "+Math.max([1,2,4])+"<br>");
+// document.write("Min: "+Math.min(4,5,2,5,125)+"<br>");
+// document.write("Mutlak: "+Math.abs(-44)+"<br>");
+// document.write("Karekök: "+Math.sqrt(16)+"<br>");
+// document.write("Mutlak-Karekök: "+Math.sqrt(Math.abs(16))+"<br>"); //monad
+// document.write("üslü: "+Math.pow(2,5)+"<br>");
 
-document.write("Aşağı yuvarla: "+Math.floor(2.9)+"<br>");
-document.write("Yukarı yuvarla: "+Math.ceil(2.1)+"<br>");
-document.write("Aşağı/Yukarı yuvarla: "+Math.round(7.4)+"<br>");
-document.write("Aşağı/Yukarı yuvarla: "+Math.round(7.5)+"<br>");
+// document.write("Aşağı yuvarla: "+Math.floor(2.9)+"<br>");
+// document.write("Yukarı yuvarla: "+Math.ceil(2.1)+"<br>");
+// document.write("Aşağı/Yukarı yuvarla: "+Math.round(7.4)+"<br>");
+// document.write("Aşağı/Yukarı yuvarla: "+Math.round(7.5)+"<br>");
 
 // Kullanıcıda tarafından aldığımız 2 tane sayının
 // s1-) Bu sayılardan en küçüğü nedir ?
@@ -102,6 +102,26 @@ document.write("Aşağı/Yukarı yuvarla: "+Math.round(7.5)+"<br>");
 // s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım
 
 //////////////////////////////////////////////////////////////
+//undefined:tanımsız
+var undefinedData;
+document.writeln(undefinedData+"<br>");
+
+//NaN=Not A Number
+var nanData=16/"asd";
+document.writeln(nanData+"<br>");
+
+//isNaN=is Not A Number  ==> false=SAYIDIR 
+var is=16/4;
+document.writeln( isNaN(is)  +"<br>");
+
+//Infinity: Sonsuz
+var infinityData=5/0;
+document.writeln(infinityData+"<br>");
+
+//new  ==> Hafıza yer açar (doğma)
+//null ==> Hafızayı boşaltmak (ölüm)
+//zero ==> Çarpma yutan, toplama etkisiz
+
 
 
 
