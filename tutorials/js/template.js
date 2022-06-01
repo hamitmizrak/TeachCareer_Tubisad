@@ -81,7 +81,7 @@ document.write("PI: "+Math.PI+"<br>");
 document.write("E: "+Math.E+"<br>");
 document.write("sin: "+Math.sin(45)+"<br>");
 
-document.write("Max: "+Math.max(4,5,2,5,125)+"<br>");
+document.write("Max: "+Math.max([1,2,4])+"<br>");
 document.write("Min: "+Math.min(4,5,2,5,125)+"<br>");
 document.write("Mutlak: "+Math.abs(-44)+"<br>");
 document.write("Karekök: "+Math.sqrt(16)+"<br>");
@@ -92,6 +92,16 @@ document.write("Aşağı yuvarla: "+Math.floor(2.9)+"<br>");
 document.write("Yukarı yuvarla: "+Math.ceil(2.1)+"<br>");
 document.write("Aşağı/Yukarı yuvarla: "+Math.round(7.4)+"<br>");
 document.write("Aşağı/Yukarı yuvarla: "+Math.round(7.5)+"<br>");
+
+// Kullanıcıda tarafından aldığımız 2 tane sayının
+// s1-) Bu sayılardan en küçüğü nedir ?
+// s2-) Bu sayılardan en büyüğü nedir ?
+// s3-) Bu sayılardan en büyüğü karekökü nedir ?
+// s4-) Bu sayılardan en büyüğü karekökünün üste yuvarlıyalım nedir ?
+// s5-) Bu sayılardan en küçüğü mutlak nedir ?
+// s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım
+
+//////////////////////////////////////////////////////////////
 
 
 
