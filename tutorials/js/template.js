@@ -218,7 +218,7 @@ document.writeln(surname+"<br>")
 
 document.writeln("++++++++++++++++++++++"+"<br>")
 
-//2-)dinamik kodlaması
+//3-)dinamik kodlaması
 document.writeln(JSON.parse(JSON.stringify(object)).adi+" "+JSON.parse(JSON.stringify(object)).soyadi);
 
 
