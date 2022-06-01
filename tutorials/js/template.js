@@ -163,7 +163,65 @@ document.writeln("++++++++++++++++++++++++<br>")
 
 //////////////////////////////////////////////////////////////
 //String
-var value=" html5 css3 JAVASCRIPT Bootstrap responsive design";
+// var value="html5 css3 JAVASCRIPT Bootstrap responsive design css3 ";
+// document.writeln(value+"<br>");
+
+// document.writeln(value.length+"<br>");
+// document.writeln(value.trim().length+"<br>");
+
+// document.writeln(value.toUpperCase()+"<br>");
+// document.writeln(value.toLowerCase()+"<br>");
+
+// document.writeln(value.concat("-son44")+"<br>");
+
+// document.writeln(value.startsWith("h")+"<br>");
+// document.writeln(value.endsWith(" ")+"<br>");
+
+// document.writeln(value.substring(1)+"<br>");
+// document.writeln(value.substring(0,5)+"<br>"); //0<=X<= 5-1
+
+// document.writeln(value.indexOf("css3")+"<br>");
+// document.writeln(value.lastIndexOf("css3")+"<br>");
+// document.writeln(value.charAt(0)+"<br>");
+
+// document.writeln(value.replace(value,"Merhabalar")+"<br>");
+
+/////////////////////////////////////////////////////////////////////////////////////
+//String
+var object={
+    "adi":"Hamit",
+    "soyadi":"Mızrak"
+};
+
+var static=JSON.stringify(object);
+document.writeln(static+"<br>");
+
+//1-)statik kodlaması
+//substring
+var nameNumber=static.indexOf("Hamit");
+document.writeln(static.substring(nameNumber,nameNumber+5) +"<br>")
+
+var surnameNumber=static.indexOf("Mızrak");
+document.writeln(static.substring(surnameNumber,surnameNumber+6) +"<br>")
+
+document.writeln("++++++++++++++++++++++"+"<br>")
+
+//2-)dinamik kodlaması
+var dynamic=JSON.stringify(object);
+var parse=JSON.parse(dynamic);
+
+var name=parse.adi;
+document.writeln(name+"<br>")
+
+var surname=parse.soyadi;
+document.writeln(surname+"<br>")
+
+document.writeln("++++++++++++++++++++++"+"<br>")
+
+//2-)dinamik kodlaması
+document.writeln(JSON.parse(JSON.stringify(object)).adi+" "+JSON.parse(JSON.stringify(object)).soyadi);
+
+
 
 
 
