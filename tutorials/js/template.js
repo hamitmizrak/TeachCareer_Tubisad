@@ -103,27 +103,34 @@ document.writeln("++++++++++++++++++++++++<br>")
 
 //////////////////////////////////////////////////////////////
 //undefined:tanımsız
-var undefinedData;
-document.writeln(undefinedData+"<br>");
+// var undefinedData;
+// document.writeln(undefinedData+"<br>");
 
-//NaN=Not A Number
-var nanData=16/"asd";
-document.writeln(nanData+"<br>");
+// //NaN=Not A Number
+// var nanData=16/"asd";
+// document.writeln(nanData+"<br>");
 
-//isNaN=is Not A Number  ==> false=SAYIDIR 
-var is=16/4;
-document.writeln( isNaN(is)  +"<br>");
+// //isNaN=is Not A Number  ==> false=SAYIDIR 
+// var is=16/4;
+// document.writeln( isNaN(is)  +"<br>");
 
-//Infinity: Sonsuz
-var infinityData=5/0;
-document.writeln(infinityData+"<br>");
+// //Infinity: Sonsuz
+// var infinityData=5/0;
+// document.writeln(infinityData+"<br>");
 
 //new  ==> Hafıza yer açar (doğma)
 //null ==> Hafızayı boşaltmak (ölüm)
 //zero ==> Çarpma yutan, toplama etkisiz
 
+//////////////////////////////////////////////////////////////
+//Escape character
+// document.writeln("\""+"<br>");
+// document.writeln("' '"+"<br>");
 
 
+//////////////////////////////////////////////////////////////
+//Random
+document.writeln( Math.round((Math.random()*4+1))+"<br>");
 
 
 
