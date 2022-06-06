@@ -1,4 +1,4 @@
-// Single Line Comment 
+// Single Line Comment
 
 /*
 multiLine Comment
@@ -32,18 +32,17 @@ multiLine Comment
 // document.write("<br>"+typeof variable);
 // document.write("==>"+variable);
 
-
 // variable="Merhabalar";
 // document.write("<br>"+typeof variable);
 // document.write("==>"+variable);
 
-document.writeln("++++++++++++++++++++++++<br>")
+document.writeln('++++++++++++++++++++++++<br>')
 // //variable rules English variable use
 // var rules=55;
 // var rulesProperty=55; //camel Case
-// var rulesProperty9632=55; 
-// var $rulesProperty9632=55; 
-// var _rulesProperty9632=55; 
+// var rulesProperty9632=55;
+// var $rulesProperty9632=55;
+// var _rulesProperty9632=55;
 
 //yazamazsın
 //var 66rules=55;
@@ -57,8 +56,8 @@ document.writeln("++++++++++++++++++++++++<br>")
 
 //Operators
 // 1-) Logic Operators        ==> &&=VE  ||=VEYA
-// 2-) Mathematics Operators  ==> + - * ** / % 
-// 3-) Comparations Operators ==> > >= < <=  !  == === 
+// 2-) Mathematics Operators  ==> + - * ** / %
+// 3-) Comparations Operators ==> > >= < <=  !  == ===
 // 4-) increment deincrement  ==> x++ , ++x , y-- , --y
 
 ///////////////////////////////////////////////////////////////
@@ -110,7 +109,7 @@ document.writeln("++++++++++++++++++++++++<br>")
 // var nanData=16/"asd";
 // document.writeln(nanData+"<br>");
 
-// //isNaN=is Not A Number  ==> false=SAYIDIR 
+// //isNaN=is Not A Number  ==> false=SAYIDIR
 // var is=16/4;
 // document.writeln( isNaN(is)  +"<br>");
 
@@ -127,14 +126,12 @@ document.writeln("++++++++++++++++++++++++<br>")
 // document.writeln("\""+"<br>");
 // document.writeln("' '"+"<br>");
 
-
 //////////////////////////////////////////////////////////////
 //Random
 // document.writeln( Math.round((Math.random()*4+1))+"<br>");
 
-//if else 
+//if else
 //Sayı bulma oyunu: 1-10 arasında rastgele sayılar olsun bizde tahmin etmeye çalışalım bizim tahmin sayımız 5 olsun eğer biz sayıdan büyükse büyük tahmin eğer sayıdan küçükse küçük tahmin. ve sonunda eğer bulursak kaçıncı tahminde bulduğumuz bize söylesin ?
-
 
 //////////////////////////////////////////////////////////////
 //SAYI
@@ -159,7 +156,6 @@ document.writeln("++++++++++++++++++++++++<br>")
 
 // var hexadecimal=0xab; //0123456789abcdef
 // document.writeln(hexadecimal+"<br>")
-
 
 //////////////////////////////////////////////////////////////
 //String
@@ -188,49 +184,61 @@ document.writeln("++++++++++++++++++++++++<br>")
 
 /////////////////////////////////////////////////////////////////////////////////////
 //String
-var object={
-    "adi":"Hamit",
-    "soyadi":"Mızrak"
-};
+// var object={
+//     "adi":"Hamit",
+//     "soyadi":"Mızrak"
+// };
 
-var static=JSON.stringify(object);
-document.writeln(static+"<br>");
+// var static=JSON.stringify(object);
+// document.writeln(static+"<br>");
 
-//1-)statik kodlaması
-//substring
-var nameNumber=static.indexOf("Hamit");
-document.writeln(static.substring(nameNumber,nameNumber+5) +"<br>")
+// //1-)statik kodlaması
+// //substring
+// var nameNumber=static.indexOf("Hamit");
+// document.writeln(static.substring(nameNumber,nameNumber+5) +"<br>")
 
-var surnameNumber=static.indexOf("Mızrak");
-document.writeln(static.substring(surnameNumber,surnameNumber+6) +"<br>")
+// var surnameNumber=static.indexOf("Mızrak");
+// document.writeln(static.substring(surnameNumber,surnameNumber+6) +"<br>")
 
-document.writeln("++++++++++++++++++++++"+"<br>")
+// document.writeln("++++++++++++++++++++++"+"<br>")
 
-//2-)dinamik kodlaması
-var dynamic=JSON.stringify(object);
-var parse=JSON.parse(dynamic);
+// //2-)dinamik kodlaması
+// var dynamic=JSON.stringify(object);
+// var parse=JSON.parse(dynamic);
 
-var name=parse.adi;
-document.writeln(name+"<br>")
+// var name=parse.adi;
+// document.writeln(name+"<br>")
 
-var surname=parse.soyadi;
-document.writeln(surname+"<br>")
+// var surname=parse.soyadi;
+// document.writeln(surname+"<br>")
 
-document.writeln("++++++++++++++++++++++"+"<br>")
+// document.writeln("++++++++++++++++++++++"+"<br>")
 
-//3-)dinamik kodlaması
-document.writeln(JSON.parse(JSON.stringify(object)).adi+" "+JSON.parse(JSON.stringify(object)).soyadi);
+// //3-)dinamik kodlaması
+// document.writeln(JSON.parse(JSON.stringify(object)).adi+" "+JSON.parse(JSON.stringify(object)).soyadi);
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+function retursuzParametresiz() {
+  document.writeln('<br>' + 'retursuz parametresiz function')
+}
+retursuzParametresiz()
+
+function retursuzParametreli(param) {
+  document.writeln('<br>' + 'retursuz parametreli  function '+param)
+}
+retursuzParametreli("argüman")
+
+function returluParametresiz() {
+   return  'returlu parametresiz function';
+  }
+var result3=  returluParametresiz();
+document.writeln('<br>'+result3)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+function returluParametreli(data) {
+var res=data*data;
+    return  res;
+   }
+ var result4=  returluParametreli(4);
+ document.writeln('<br>'+result4)
