@@ -219,26 +219,193 @@ document.writeln('++++++++++++++++++++++++<br>')
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-function retursuzParametresiz() {
-  document.writeln('<br>' + 'retursuz parametresiz function')
-}
-retursuzParametresiz()
+// function retursuzParametresiz() {
+//   document.writeln('<br>' + 'retursuz parametresiz function')
+// }
+// retursuzParametresiz()
 
-function retursuzParametreli(param) {
-  document.writeln('<br>' + 'retursuz parametreli  function '+param)
-}
-retursuzParametreli("argüman")
+// function retursuzParametreli(param) {
+//   document.writeln('<br>' + 'retursuz parametreli  function ' + param)
+// }
+// retursuzParametreli('argüman')
 
-function returluParametresiz() {
-   return  'returlu parametresiz function';
+// function returluParametresiz() {
+//   return 'returlu parametresiz function'
+// }
+// var result3 = returluParametresiz()
+// document.writeln('<br>' + result3)
+
+// function returluParametreli(data) {
+//   var res = data * data
+//   return res
+// }
+// var result4 = returluParametreli(4)
+// document.writeln('<br>' + result4 + '<br>')
+
+// ///////////////////////////////////////////////////////
+
+// LOOP
+// //iterative
+// for (var i = 1; i <= 10; i++) {
+//   document.write(i + ' ')
+// }
+
+// document.writeln('<br>' + '********************</br>')
+
+// //while
+// var x = 1
+// while (x <= 10) {
+//   document.write(x + ' ')
+//   x++
+// }
+
+//Kullanıcıdan aldığımız verinin ilk harfi ve son harfi görünsün geriye kalan karakter kadar * olsun ==> Alınan örneğin Hamit  ==>  H***t
+//function
+//string ==> replace,sub,String,charAt()
+//loop
+
+///////////////////////////////////////////////////////
+//normal function
+function normal() {
+  document.write('<br>' + 'normal function')
+}
+//normal()
+
+//anonymous function (ES5)
+var value = function () {
+  document.write('<br>' + 'anonymous function')
+}
+//value()
+
+//arrow function (ES6)
+var value2 = () => {
+  document.write('<br>' + 'arrow function')
+}
+//value2()
+
+//Imedia Function
+//()()
+
+//Multi Thread  ==> JAVA
+//Single Thread ==> JAVASCRIPT
+
+//setTimeout
+//setTimeout(body,timer)
+// 1000 ms =1 s
+//setTimeout(normal,3000)
+
+//callback function
+//promise
+
+///////////////////////////////////////////////
+//try catch
+// try {
+//     alert44("Deneme")
+// } catch (err) {
+//     document.write("<br>"+err.message)
+//     document.write("<br>"+err.name)
+// }finally{
+//     document.write("<br>"+"db.closed socket.close");
+// }
+//throw "veri"
+
+///////////////////////////////////////////////
+//conditional
+function conditional() {
+  var number = 7
+
+  //if else
+  //   if (number > 10) {
+  //     document.write('<br>' + 'büyüktür')
+  //   } else {
+  //     document.write('<br>' + 'küçüktür')
+  //   }
+
+  // //ternary (if else)
+  // var resultData=(number > 10) ?'büyüktür' :'küçüktür';
+  // document.write('<br>' + resultData)
+
+  //if else if else
+  if (number == 1) {
+    document.write('<br>' + '1')
+  } else if (number == 2) {
+    document.write('<br>' + '2')
+  } else if (number == 3) {
+    document.write('<br>' + '3')
+  } else if (number == 4) {
+    document.write('<br>' + '4')
+  } else if (number == 5) {
+    document.write('<br>' + '5')
+  } else if (number == 6) {
+    document.write('<br>' + '6')
+  } else if (number == 7) {
+    document.write('<br>' + '7')
+  } else {
+    document.write('<br>' + 'farklı sayı')
   }
-var result3=  returluParametresiz();
-document.writeln('<br>'+result3)
+
+  //switch-case
+  switch (number) {
+    case 1:
+      document.write('<br>' + '1')
+      break
+    case 2:
+      document.write('<br>' + '2')
+      break
+    case 3:
+      document.write('<br>' + '3')
+      break
+    case 4:
+      document.write('<br>' + '4')
+      break
+    case 5:
+      document.write('<br>' + '5')
+      break
+    case 6:
+      document.write('<br>' + '6')
+    case 7:
+      document.write('<br>' + '7')
+      break
+
+    default:
+      document.write('<br>' + 'farklı sayı')
+      break
+  }
+
+  //return    ==> metot çalışmasına izin vermiyor
+  //break     ==> döngüyü çalışmasına izin vermiyor
+  //continue  ==> sadece 1 seferliğine çalışmasın sonra devam etsin
+}
+//conditional()
+
+//kullanıcı tarafından sayı girelim (prompt)
+//1<=X<=sayı
+//eğer sayı 44 secretKey ise toplama yapmadan çıksın (break)
+//eğer sayı 1 veya negatifse kullanıcıyı uyrarsın (break)?
+//eğer toplanacak sayılarda 7 varsa toplamaya dahil edilmesin (continue)
+//Bu sayıların toplamını yapan program yapalım
 
 
-function returluParametreli(data) {
-var res=data*data;
-    return  res;
-   }
- var result4=  returluParametreli(4);
- document.writeln('<br>'+result4)
+function numberUser() {
+  var val =10; //Number(prompt('Lütfen bir sayı giriniz'))
+
+  //hoisting
+  sum = 0; //toplama 0(sıfır etkisizdir)
+  var sum;
+
+  for (let i = 1; i <= val; i++) {
+    if (val == 44) {
+      alert('44 secretKey çıkış yapıldı')
+      break
+    }
+    
+    if (i == 7) {
+      alert('7 toplanmıyacak')
+      continue
+    }
+    sum += i
+  }
+  document.writeln('<br>' + sum)
+}
+
+numberUser()
