@@ -381,31 +381,80 @@ function conditional() {
 //kullanıcı tarafından sayı girelim (prompt)
 //1<=X<=sayı
 //eğer sayı 44 secretKey ise toplama yapmadan çıksın (break)
-//eğer sayı 1 veya negatifse kullanıcıyı uyrarsın (break)?
+//eğer sayı 1 veya negatifse kullanıcıyı uyararsın (break) 1 veya-1 küçük giremezsiniz sonrasında tekrardan kullanıcıdan sayı istesin (sonsuz)
 //eğer toplanacak sayılarda 7 varsa toplamaya dahil edilmesin (continue)
 //Bu sayıların toplamını yapan program yapalım
 
-
-function numberUser() {
-  var val =10; //Number(prompt('Lütfen bir sayı giriniz'))
-
-  //hoisting
-  sum = 0; //toplama 0(sıfır etkisizdir)
-  var sum;
-
-  for (let i = 1; i <= val; i++) {
-    if (val == 44) {
-      alert('44 secretKey çıkış yapıldı')
-      break
-    }
-    
-    if (i == 7) {
-      alert('7 toplanmıyacak')
-      continue
-    }
-    sum += i
-  }
-  document.writeln('<br>' + sum)
+function userData(){
+    return Number(prompt('Lütfen bir sayı giriniz'));
 }
 
-numberUser()
+
+function numberUser() {
+    
+ //while (true) {  }
+    var val = userData();
+    //hoisting
+    sum = 0 //toplama 0(sıfır etkisizdir)
+    var sum;
+    if (val <= -1) {
+      alert('-1 veremezsiniz')
+    } else {
+      for (let i = 1; i <= val; i++) {
+        if (val == 44) {
+          alert('44 secretKey çıkış yapıldı')
+          break
+        }
+
+        if (i == 7) {
+          alert('7 toplanmıyacak')
+          continue
+        }
+        sum += i
+      }
+      document.writeln('<br>' + sum)
+    }
+}
+
+//numberUser()
+/////////////////////////////////////////////////////////////////////////////////
+//ÖDEV-1
+//y=3x+4k ==> 1.dereceden 2 bilinmyenli denklem
+//Kullanıcı tarafından alınan x ve k değerlerini hesaplayan algoritma yazınız ?
+
+//ÖDEV-2
+//Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
+//Formül:(x*9/5)+32
+
+
+//ÖDEV-3 verilen bir sayının negatif mi pozitif mi olduğunu bulan algoritma ?
+
+//ÖDEV-4 Kullanıcı tarafından aldığımız password ile repassword girilsin doğru ve yanlışı göstersin ?
+    
+
+/////////////////////////////////////////////////////////////////////////////////
+
+//ÖDEV-5 (if-else for break continue)
+//Fonksiyonlarla yapılsın
+//Örnek-1)  kullanıcının vereceği (prompt) bitiş sayısını belirleyelim Exam 1<=X<=5
+//1.adım: kaç tane sayı var ?
+//2.adım: sayı toplamları var ?
+
+//3.adım: kaç tane tek  sayı var ?
+//4.adım: tek sayılar toplamı ?
+//5.adım: tek sayılar gösterelim ?
+
+//6.adım: kaç tane çift  sayı var ?
+//7.adım: çift sayılar toplamı ?
+//8.adım: çift sayılar gösterelim ?
+
+//Eğer verilen sayılarda 7 sayısı varsa bunu eklemesin (continue)
+//Eğer bitiş sayısı 100 fazla ise 100'e kadar olanlar toplansın  (break)
+//Eğer kullanıcı başlangıç sayıdan küçük girerse uyaralım başlangıçtan büyük girmesini isteyelim
+//Eğer kullanıcı secret-key girerse yani 44 sayısını girerse program çalışmayı direk durdursun
+
+/////////////////////////////////////////////////////////////////////////////////
+//ÖDEV-6
+//Login userEmail,userPassword kullanıcıdan aldığımız değeri db ile karşılaştıracak eğer doğru ise adminFunction'a gönderecek 4 kalan haktan aşağı doğru düşecek eğer kalan hak sayımız 0 olursa kullanıcı bloke olsun
+// dbUserEmail="deneme@gmail.com"
+// dbUserPassword="root"
