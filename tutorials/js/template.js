@@ -385,35 +385,33 @@ function conditional() {
 //eğer toplanacak sayılarda 7 varsa toplamaya dahil edilmesin (continue)
 //Bu sayıların toplamını yapan program yapalım
 
-function userData(){
-    return Number(prompt('Lütfen bir sayı giriniz'));
+function userData() {
+  return Number(prompt('Lütfen bir sayı giriniz'))
 }
 
-
 function numberUser() {
-    
- //while (true) {  }
-    var val = userData();
-    //hoisting
-    sum = 0 //toplama 0(sıfır etkisizdir)
-    var sum;
-    if (val <= -1) {
-      alert('-1 veremezsiniz')
-    } else {
-      for (let i = 1; i <= val; i++) {
-        if (val == 44) {
-          alert('44 secretKey çıkış yapıldı')
-          break
-        }
-
-        if (i == 7) {
-          alert('7 toplanmıyacak')
-          continue
-        }
-        sum += i
+  //while (true) {  }
+  var val = userData()
+  //hoisting
+  sum = 0 //toplama 0(sıfır etkisizdir)
+  var sum
+  if (val <= -1) {
+    alert('-1 veremezsiniz')
+  } else {
+    for (let i = 1; i <= val; i++) {
+      if (val == 44) {
+        alert('44 secretKey çıkış yapıldı')
+        break
       }
-      document.writeln('<br>' + sum)
+
+      if (i == 7) {
+        alert('7 toplanmıyacak')
+        continue
+      }
+      sum += i
     }
+    document.writeln('<br>' + sum)
+  }
 }
 
 //numberUser()
@@ -426,11 +424,9 @@ function numberUser() {
 //Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
 //Formül:(x*9/5)+32
 
-
 //ÖDEV-3 verilen bir sayının negatif mi pozitif mi olduğunu bulan algoritma ?
 
 //ÖDEV-4 Kullanıcı tarafından aldığımız password ile repassword girilsin doğru ve yanlışı göstersin ?
-    
 
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -458,3 +454,100 @@ function numberUser() {
 //Login userEmail,userPassword kullanıcıdan aldığımız değeri db ile karşılaştıracak eğer doğru ise adminFunction'a gönderecek 4 kalan haktan aşağı doğru düşecek eğer kalan hak sayımız 0 olursa kullanıcı bloke olsun
 // dbUserEmail="deneme@gmail.com"
 // dbUserPassword="root"
+
+/////////////////////////////////////////////////////////////////////////////////
+//Date
+// setDate()  (1-31)
+// setFullYear() d.setFullYear(2020);
+// setHours() (0-23)
+// setMilliseconds() (0-999)
+// setMinutes() (0-59)
+// setMonth()  (0-11)
+// setSeconds() (0-59)
+// setTime() milliseconds since January 1, 1970
+
+
+let showDate = function () {
+  let date = new Date()
+  document.writeln('<br>' + date)
+}
+showDate()
+
+let showDate2 = () => {
+  //let date=new Date();
+  //let date=new Date("2015-1-1");
+  let date = new Date()
+  document.writeln('<br>' + date)
+  document.writeln('<br>' + date.getDay()) // 0=pazar 1=pazartesi 2=salı 3=çarşamba
+  document.writeln('<br>' + date.getMinutes())
+  document.writeln('<br>' + date.getMonth()) //aylar: 0 başlar
+  document.writeln('<br>' + date.getMilliseconds())
+}
+//showDate2()
+
+//Zamanın dinamik olarak alıp hangi gün olduğunu gösteren arrow function algoritmasını yazalım switch-case   new Date().getDay()
+let nowDateDay = () => {
+  let nowDay = new Date().getDay()
+  switch (nowDay) {
+    case 0:
+      document.write('<br>' + 'Günlerden Pazar')
+      break
+    case 1:
+      document.write('<br>' + 'Günlerden Pazartesi')
+      break
+    case 2:
+      document.write('<br>' + 'Günlerden salı')
+      break
+    case 3:
+      document.write('<br>' + 'Günlerden çarşamba')
+      break
+    case 4:
+      document.write('<br>' + 'Günlerden Perşembe')
+      break
+    case 5:
+      document.write('<br>' + 'Günlerden Cuma')
+      break
+    case 6:
+      document.write('<br>' + 'Günlerden Cumartesi')
+      break
+
+    default:
+      document.write('<br>' + 'Günlerden belirtilen aralıkta giriniz')
+      break
+  }
+}
+//nowDateDay()
+
+
+//Zamanın dinamik olarak alıp hangi gün olduğunu gösteren Immedia function algoritmasını yazalım switch-case   new Date().getDay()
+
+(() => {
+    let nowDay = new Date().getDay()
+    switch (nowDay) {
+      case 0:
+        document.write('<br>' + 'Günlerden Pazar')
+        break
+      case 1:
+        document.write('<br>' + 'Günlerden Pazartesi')
+        break
+      case 2:
+        document.write('<br>' + 'Günlerden salı')
+        break
+      case 3:
+        document.write('<br>' + 'Günlerden çarşamba')
+        break
+      case 4:
+        document.write('<br>' + 'Günlerden Perşembe')
+        break
+      case 5:
+        document.write('<br>' + 'Günlerden Cuma')
+        break
+      case 6:
+        document.write('<br>' + 'Günlerden Cumartesi')
+        break
+  
+      default:
+        document.write('<br>' + 'Günlerden belirtilen aralıkta giriniz')
+        break
+    }
+  })()
