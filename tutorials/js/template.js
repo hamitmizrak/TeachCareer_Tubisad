@@ -472,7 +472,7 @@ let login = () => {
       return adminPage()
     else {
       count--;
-      alert('kalan hakkınız: ' + count)
+      alert(`kalan hakkınız: ${count}`)
     }
   }
   alert('hakkınız kalmadı iyi günler')
