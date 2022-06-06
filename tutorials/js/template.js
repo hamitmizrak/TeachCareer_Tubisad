@@ -131,6 +131,7 @@ document.writeln('++++++++++++++++++++++++<br>')
 // document.writeln( Math.round((Math.random()*4+1))+"<br>");
 
 //if else
+//ÖDEV
 //Sayı bulma oyunu: 1-10 arasında rastgele sayılar olsun bizde tahmin etmeye çalışalım bizim tahmin sayımız 5 olsun eğer biz sayıdan büyükse büyük tahmin eğer sayıdan küçükse küçük tahmin. ve sonunda eğer bulursak kaçıncı tahminde bulduğumuz bize söylesin ?
 
 //////////////////////////////////////////////////////////////
@@ -454,6 +455,29 @@ function numberUser() {
 //Login userEmail,userPassword kullanıcıdan aldığımız değeri db ile karşılaştıracak eğer doğru ise adminFunction'a gönderecek 4 kalan haktan aşağı doğru düşecek eğer kalan hak sayımız 0 olursa kullanıcı bloke olsun
 // dbUserEmail="deneme@gmail.com"
 // dbUserPassword="root"
+function adminPage() {
+  document.writeln('Admin sayfası')
+}
+
+let login = () => {
+  let dbUserEmail = 'deneme@gmail.com',
+    dbUserPassword = 'root'
+  let userEmail, userPassword
+
+  let count = 4;
+  while (count > 0) {
+    userEmail = prompt('email giriniz')
+    userPassword = prompt('şifre giriniz')
+    if (userEmail === dbUserEmail && userPassword === dbUserPassword)
+      return adminPage()
+    else {
+      count--;
+      alert('kalan hakkınız: ' + count)
+    }
+  }
+  alert('hakkınız kalmadı iyi günler')
+}
+login()
 
 /////////////////////////////////////////////////////////////////////////////////
 //Date
@@ -466,88 +490,87 @@ function numberUser() {
 // setSeconds() (0-59)
 // setTime() milliseconds since January 1, 1970
 
+// let showDate = function () {
+//   let date = new Date()
+//   document.writeln('<br>' + date)
+// }
+// showDate()
 
-let showDate = function () {
-  let date = new Date()
-  document.writeln('<br>' + date)
-}
-showDate()
+// let showDate2 = () => {
+//   //let date=new Date();
+//   //let date=new Date("2015-1-1");
+//   let date = new Date()
+//   document.writeln('<br>' + date)
+//   document.writeln('<br>' + date.getDay()) // 0=pazar 1=pazartesi 2=salı 3=çarşamba
+//   document.writeln('<br>' + date.getMinutes())
+//   document.writeln('<br>' + date.getMonth()) //aylar: 0 başlar
+//   document.writeln('<br>' + date.getMilliseconds())
+// }
+// //showDate2()
 
-let showDate2 = () => {
-  //let date=new Date();
-  //let date=new Date("2015-1-1");
-  let date = new Date()
-  document.writeln('<br>' + date)
-  document.writeln('<br>' + date.getDay()) // 0=pazar 1=pazartesi 2=salı 3=çarşamba
-  document.writeln('<br>' + date.getMinutes())
-  document.writeln('<br>' + date.getMonth()) //aylar: 0 başlar
-  document.writeln('<br>' + date.getMilliseconds())
-}
-//showDate2()
+// //ÖDEV
+// //Zamanın dinamik olarak alıp hangi gün olduğunu gösteren arrow function algoritmasını yazalım switch-case   new Date().getDay()
+// let nowDateDay = () => {
+//   let nowDay = new Date().getDay()
+//   switch (nowDay) {
+//     case 0:
+//       document.write('<br>' + 'Günlerden Pazar')
+//       break
+//     case 1:
+//       document.write('<br>' + 'Günlerden Pazartesi')
+//       break
+//     case 2:
+//       document.write('<br>' + 'Günlerden salı')
+//       break
+//     case 3:
+//       document.write('<br>' + 'Günlerden çarşamba')
+//       break
+//     case 4:
+//       document.write('<br>' + 'Günlerden Perşembe')
+//       break
+//     case 5:
+//       document.write('<br>' + 'Günlerden Cuma')
+//       break
+//     case 6:
+//       document.write('<br>' + 'Günlerden Cumartesi')
+//       break
 
-//Zamanın dinamik olarak alıp hangi gün olduğunu gösteren arrow function algoritmasını yazalım switch-case   new Date().getDay()
-let nowDateDay = () => {
-  let nowDay = new Date().getDay()
-  switch (nowDay) {
-    case 0:
-      document.write('<br>' + 'Günlerden Pazar')
-      break
-    case 1:
-      document.write('<br>' + 'Günlerden Pazartesi')
-      break
-    case 2:
-      document.write('<br>' + 'Günlerden salı')
-      break
-    case 3:
-      document.write('<br>' + 'Günlerden çarşamba')
-      break
-    case 4:
-      document.write('<br>' + 'Günlerden Perşembe')
-      break
-    case 5:
-      document.write('<br>' + 'Günlerden Cuma')
-      break
-    case 6:
-      document.write('<br>' + 'Günlerden Cumartesi')
-      break
+//     default:
+//       document.write('<br>' + 'Günlerden belirtilen aralıkta giriniz')
+//       break
+//   }
+// }
+// //nowDateDay()
 
-    default:
-      document.write('<br>' + 'Günlerden belirtilen aralıkta giriniz')
-      break
-  }
-}
-//nowDateDay()
+// //Zamanın dinamik olarak alıp hangi gün olduğunu gösteren Immedia function algoritmasını yazalım switch-case   new Date().getDay()
 
+// (() => {
+//     let nowDay = new Date().getDay()
+//     switch (nowDay) {
+//       case 0:
+//         document.write('<br>' + 'Günlerden Pazar')
+//         break
+//       case 1:
+//         document.write('<br>' + 'Günlerden Pazartesi')
+//         break
+//       case 2:
+//         document.write('<br>' + 'Günlerden salı')
+//         break
+//       case 3:
+//         document.write('<br>' + 'Günlerden çarşamba')
+//         break
+//       case 4:
+//         document.write('<br>' + 'Günlerden Perşembe')
+//         break
+//       case 5:
+//         document.write('<br>' + 'Günlerden Cuma')
+//         break
+//       case 6:
+//         document.write('<br>' + 'Günlerden Cumartesi')
+//         break
 
-//Zamanın dinamik olarak alıp hangi gün olduğunu gösteren Immedia function algoritmasını yazalım switch-case   new Date().getDay()
-
-(() => {
-    let nowDay = new Date().getDay()
-    switch (nowDay) {
-      case 0:
-        document.write('<br>' + 'Günlerden Pazar')
-        break
-      case 1:
-        document.write('<br>' + 'Günlerden Pazartesi')
-        break
-      case 2:
-        document.write('<br>' + 'Günlerden salı')
-        break
-      case 3:
-        document.write('<br>' + 'Günlerden çarşamba')
-        break
-      case 4:
-        document.write('<br>' + 'Günlerden Perşembe')
-        break
-      case 5:
-        document.write('<br>' + 'Günlerden Cuma')
-        break
-      case 6:
-        document.write('<br>' + 'Günlerden Cumartesi')
-        break
-  
-      default:
-        document.write('<br>' + 'Günlerden belirtilen aralıkta giriniz')
-        break
-    }
-  })()
+//       default:
+//         document.write('<br>' + 'Günlerden belirtilen aralıkta giriniz')
+//         break
+//     }
+//   })()
