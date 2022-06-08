@@ -455,7 +455,7 @@ function numberUser() {
 //Login userEmail,userPassword kullanıcıdan aldığımız değeri db ile karşılaştıracak eğer doğru ise adminFunction'a gönderecek 4 kalan haktan aşağı doğru düşecek eğer kalan hak sayımız 0 olursa kullanıcı bloke olsun
 // dbUserEmail="deneme@gmail.com"
 // dbUserPassword="root"
-function adminPage() {
+let adminPage=()=> {
   document.writeln('Admin sayfası')
 }
 
