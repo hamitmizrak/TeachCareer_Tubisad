@@ -15,6 +15,7 @@ project version: v.1
 body{
     font-family: 'Quicksand', sans-serif;
     position: relative;
+    background:#edeff1;
 }
 
 html{
@@ -41,6 +42,12 @@ p{
 .line_clamp3{
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line_clamp4{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -92,6 +99,21 @@ header{
 }
 
 /* main */
+#header_icon i{
+    color:red;
+    font-size: 8rem;
+}
+
+
+#header_icon .card{
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,.8);
+}
+
+#header_icon .card:hover{
+   cursor:pointer;
+   opacity:.7;
+}
+
 
 /* footer */
 footer{

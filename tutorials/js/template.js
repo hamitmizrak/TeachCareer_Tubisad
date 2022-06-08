@@ -754,15 +754,24 @@ let object={
 "isTurkish":true,
 "teknolojiler":["html5","css3","js"],
 "database":{
-  "name":"postgresql",
+  "name44":"postgresql",
   "isRelation":true,
+},
+"adiSoyadi":function(){
+ return this.adi+" "+this.soyadi;
 }
 
 };
-// console.log(object)
+ //console.log(object)
 // console.log(object.adi.toUpperCase())
 // console.log(object.teknolojiler[0])
 // console.log(object.database.name)
+// console.log(object.database.name44)
+// console.log(object.database)
+// console.log(object.database["name44"])
+// console.log(object["database"]["name44"])
+console.log(object.adiSoyadi())
+
 
 // //create object attributes
 // object.meslek="Bilgisayar müh"
@@ -796,15 +805,26 @@ let object={
 // htmlNormal()
 
 //3-) Html Template
-let htmlTemplate=()=>{
-  let adi="adim55",soyadi="soyadim55";
-let html2=
-`
-<ul>
-  <li>${adi}</li>
-  <li>${soyadi}</li>
-</ul>
-`;
-document.body.innerHTML=html2;
-}
-htmlTemplate()
+// let htmlTemplate=()=>{
+//   let adi="adim55",soyadi="soyadim55";
+// let html2=
+// `
+// <ul>
+//   <li>${adi}</li>
+//   <li>${soyadi}</li>
+// </ul>
+// `;
+// document.body.innerHTML=html2;
+// }
+// htmlTemplate()
+
+/////////////
+//object constructor
+// function Student(adi,soyadi){
+// this.adi=adi;
+// this.soyadi=soyadi;
+// console.log(this);
+// }
+
+// let result=new Student("Hamit","Mızrak");
+// console.log(`adim:${result.adi} soyadi:${result.soyadi}`)
