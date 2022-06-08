@@ -265,23 +265,23 @@ document.writeln('++++++++++++++++++++++++<br>')
 //string ==> replace,sub,String,charAt()
 //loop
 
-///////////////////////////////////////////////////////
-//normal function
-function normal() {
-  document.write('<br>' + 'normal function')
-}
-//normal()
+// ///////////////////////////////////////////////////////
+// //normal function
+// function normal() {
+//   document.write('<br>' + 'normal function')
+// }
+// //normal()
 
-//anonymous function (ES5)
-var value = function () {
-  document.write('<br>' + 'anonymous function')
-}
-//value()
+// //anonymous function (ES5)
+// var value = function () {
+//   document.write('<br>' + 'anonymous function')
+// }
+// //value()
 
-//arrow function (ES6)
-var value2 = () => {
-  document.write('<br>' + 'arrow function')
-}
+// //arrow function (ES6)
+// var value2 = () => {
+//   document.write('<br>' + 'arrow function')
+// }
 //value2()
 
 //Imedia Function
@@ -312,8 +312,8 @@ var value2 = () => {
 
 ///////////////////////////////////////////////
 //conditional
-function conditional() {
-  var number = 7
+// function conditional() {
+//   var number = 7
 
   //if else
   //   if (number > 10) {
@@ -326,94 +326,94 @@ function conditional() {
   // var resultData=(number > 10) ?'büyüktür' :'küçüktür';
   // document.write('<br>' + resultData)
 
-  //if else if else
-  if (number == 1) {
-    document.write('<br>' + '1')
-  } else if (number == 2) {
-    document.write('<br>' + '2')
-  } else if (number == 3) {
-    document.write('<br>' + '3')
-  } else if (number == 4) {
-    document.write('<br>' + '4')
-  } else if (number == 5) {
-    document.write('<br>' + '5')
-  } else if (number == 6) {
-    document.write('<br>' + '6')
-  } else if (number == 7) {
-    document.write('<br>' + '7')
-  } else {
-    document.write('<br>' + 'farklı sayı')
-  }
+//   //if else if else
+//   if (number == 1) {
+//     document.write('<br>' + '1')
+//   } else if (number == 2) {
+//     document.write('<br>' + '2')
+//   } else if (number == 3) {
+//     document.write('<br>' + '3')
+//   } else if (number == 4) {
+//     document.write('<br>' + '4')
+//   } else if (number == 5) {
+//     document.write('<br>' + '5')
+//   } else if (number == 6) {
+//     document.write('<br>' + '6')
+//   } else if (number == 7) {
+//     document.write('<br>' + '7')
+//   } else {
+//     document.write('<br>' + 'farklı sayı')
+//   }
 
-  //switch-case
-  switch (number) {
-    case 1:
-      document.write('<br>' + '1')
-      break
-    case 2:
-      document.write('<br>' + '2')
-      break
-    case 3:
-      document.write('<br>' + '3')
-      break
-    case 4:
-      document.write('<br>' + '4')
-      break
-    case 5:
-      document.write('<br>' + '5')
-      break
-    case 6:
-      document.write('<br>' + '6')
-    case 7:
-      document.write('<br>' + '7')
-      break
+//   //switch-case
+//   switch (number) {
+//     case 1:
+//       document.write('<br>' + '1')
+//       break
+//     case 2:
+//       document.write('<br>' + '2')
+//       break
+//     case 3:
+//       document.write('<br>' + '3')
+//       break
+//     case 4:
+//       document.write('<br>' + '4')
+//       break
+//     case 5:
+//       document.write('<br>' + '5')
+//       break
+//     case 6:
+//       document.write('<br>' + '6')
+//     case 7:
+//       document.write('<br>' + '7')
+//       break
 
-    default:
-      document.write('<br>' + 'farklı sayı')
-      break
-  }
+//     default:
+//       document.write('<br>' + 'farklı sayı')
+//       break
+//   }
 
-  //return    ==> metot çalışmasına izin vermiyor
-  //break     ==> döngüyü çalışmasına izin vermiyor
-  //continue  ==> sadece 1 seferliğine çalışmasın sonra devam etsin
-}
-//conditional()
+//   //return    ==> metot çalışmasına izin vermiyor
+//   //break     ==> döngüyü çalışmasına izin vermiyor
+//   //continue  ==> sadece 1 seferliğine çalışmasın sonra devam etsin
+// }
+// //conditional()
 
-//kullanıcı tarafından sayı girelim (prompt)
-//1<=X<=sayı
-//eğer sayı 44 secretKey ise toplama yapmadan çıksın (break)
-//eğer sayı 1 veya negatifse kullanıcıyı uyararsın (break) 1 veya-1 küçük giremezsiniz sonrasında tekrardan kullanıcıdan sayı istesin (sonsuz)
-//eğer toplanacak sayılarda 7 varsa toplamaya dahil edilmesin (continue)
-//Bu sayıların toplamını yapan program yapalım
+// //kullanıcı tarafından sayı girelim (prompt)
+// //1<=X<=sayı
+// //eğer sayı 44 secretKey ise toplama yapmadan çıksın (break)
+// //eğer sayı 1 veya negatifse kullanıcıyı uyararsın (break) 1 veya-1 küçük giremezsiniz sonrasında tekrardan kullanıcıdan sayı istesin (sonsuz)
+// //eğer toplanacak sayılarda 7 varsa toplamaya dahil edilmesin (continue)
+// //Bu sayıların toplamını yapan program yapalım
 
-function userData() {
-  return Number(prompt('Lütfen bir sayı giriniz'))
-}
+// function userData() {
+//   return Number(prompt('Lütfen bir sayı giriniz'))
+// }
 
-function numberUser() {
-  //while (true) {  }
-  var val = userData()
-  //hoisting
-  sum = 0 //toplama 0(sıfır etkisizdir)
-  var sum
-  if (val <= -1) {
-    alert('-1 veremezsiniz')
-  } else {
-    for (let i = 1; i <= val; i++) {
-      if (val == 44) {
-        alert('44 secretKey çıkış yapıldı')
-        break
-      }
+// function numberUser() {
+//   //while (true) {  }
+//   var val = userData()
+//   //hoisting
+//   sum = 0 //toplama 0(sıfır etkisizdir)
+//   var sum
+//   if (val <= -1) {
+//     alert('-1 veremezsiniz')
+//   } else {
+//     for (let i = 1; i <= val; i++) {
+//       if (val == 44) {
+//         alert('44 secretKey çıkış yapıldı')
+//         break
+//       }
 
-      if (i == 7) {
-        alert('7 toplanmıyacak')
-        continue
-      }
-      sum += i
-    }
-    document.writeln('<br>' + sum)
-  }
-}
+//       if (i == 7) {
+//         alert('7 toplanmıyacak')
+//         continue
+//       }
+//       sum += i
+//     }
+//     document.writeln('<br>' + sum)
+//   }
+// }
 
 //numberUser()
 /////////////////////////////////////////////////////////////////////////////////
@@ -455,29 +455,29 @@ function numberUser() {
 //Login userEmail,userPassword kullanıcıdan aldığımız değeri db ile karşılaştıracak eğer doğru ise adminFunction'a gönderecek 4 kalan haktan aşağı doğru düşecek eğer kalan hak sayımız 0 olursa kullanıcı bloke olsun
 // dbUserEmail="deneme@gmail.com"
 // dbUserPassword="root"
-let adminPage=()=> {
-  document.writeln('Admin sayfası')
-}
+// let adminPage=()=> {
+//   document.writeln('Admin sayfası')
+// }
 
-let login = () => {
-  let dbUserEmail = 'deneme@gmail.com',
-    dbUserPassword = 'root'
-  let userEmail, userPassword
+// let login = () => {
+//   let dbUserEmail = 'deneme@gmail.com',
+//     dbUserPassword = 'root'
+//   let userEmail, userPassword
 
-  let count = 4;
-  while (count > 0) {
-    userEmail = prompt('email giriniz')
-    userPassword = prompt('şifre giriniz')
-    if (userEmail === dbUserEmail && userPassword === dbUserPassword)
-      return adminPage()
-    else {
-      count--;
-      alert(`kalan hakkınız: ${count}`)
-    }
-  }
-  alert('hakkınız kalmadı iyi günler')
-}
-login()
+//   let count = 4;
+//   while (count > 0) {
+//     userEmail = prompt('email giriniz')
+//     userPassword = prompt('şifre giriniz')
+//     if (userEmail === dbUserEmail && userPassword === dbUserPassword)
+//       return adminPage()
+//     else {
+//       count--;
+//       alert(`kalan hakkınız: ${count}`)
+//     }
+//   }
+//   alert('hakkınız kalmadı iyi günler')
+// }
+// login()
 
 /////////////////////////////////////////////////////////////////////////////////
 //Date
@@ -574,3 +574,56 @@ login()
 //         break
 //     }
 //   })()
+
+////////////////////////////////////////////////////////////////////////////
+//Diziler
+
+let dizi=()=>{
+  //sıfırıncı indisten başlar
+let dizi=[1,2,3,true,"merhabalar"];
+
+document.write("<br>"+dizi[0])
+document.write("<br>"+dizi[dizi.length-1])
+
+//iterative for
+for (let i = 0; i < 5; i++) {
+  document.write(dizi[i]+" ")
+}
+document.writeln("<br>")
+
+//for in
+for ( temp in dizi ) {
+  document.write(temp+" ")
+ 
+}
+
+document.writeln("<br>")
+
+//push: sona eklemek
+dizi.push("son")
+
+//unshift:başa eklemek
+dizi.unshift("baş")
+
+//for of
+for ( let temp of dizi ) {
+  document.write(temp+" ")
+}
+
+document.writeln("<br>")
+
+//pop: sondan 1 eleman çıkarmak
+dizi.pop()
+
+//unshift: baştan 1 eleman çıkarmak
+dizi.shift()
+
+document.writeln("<br>")
+//for of
+for ( let temp of dizi ) {
+  document.write(temp+" ")
+}
+
+
+}
+dizi()
