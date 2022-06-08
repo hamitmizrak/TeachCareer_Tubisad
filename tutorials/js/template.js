@@ -315,16 +315,16 @@ document.writeln('++++++++++++++++++++++++<br>')
 // function conditional() {
 //   var number = 7
 
-  //if else
-  //   if (number > 10) {
-  //     document.write('<br>' + 'büyüktür')
-  //   } else {
-  //     document.write('<br>' + 'küçüktür')
-  //   }
+//if else
+//   if (number > 10) {
+//     document.write('<br>' + 'büyüktür')
+//   } else {
+//     document.write('<br>' + 'küçüktür')
+//   }
 
-  // //ternary (if else)
-  // var resultData=(number > 10) ?'büyüktür' :'küçüktür';
-  // document.write('<br>' + resultData)
+// //ternary (if else)
+// var resultData=(number > 10) ?'büyüktür' :'küçüktür';
+// document.write('<br>' + resultData)
 
 //   //if else if else
 //   if (number == 1) {
@@ -578,121 +578,117 @@ document.writeln('++++++++++++++++++++++++<br>')
 ////////////////////////////////////////////////////////////////////////////
 //Diziler
 //forin forof
-let dizi=()=>{
-  //sıfırıncı indisten başlar
-let dizi=[1,2,3,true,"merhabalar"];
+// let dizi=()=>{
+//sıfırıncı indisten başlar
+// let dizi=[1,2,3,true,"merhabalar"];
 
-document.write("<br>"+dizi[0])
-document.write("<br>"+dizi[dizi.length-1])
+// document.write("<br>"+dizi[0])
+// document.write("<br>"+dizi[dizi.length-1])
 
-//iterative for
-for (let i = 0; i < 5; i++) {
-  document.write(dizi[i]+" ")
-}
-document.writeln("<br>")
+// //iterative for
+// for (let i = 0; i < 5; i++) {
+//   document.write(dizi[i]+" ")
+// }
+// document.writeln("<br>")
 
-//for in
-for ( temp in dizi ) {
-  document.write(temp+" ")
- 
-}
+// //for in
+// for ( temp in dizi ) {
+//   document.write(temp+" ")
 
-document.writeln("<br>")
+// }
 
-//push: sona eklemek
-dizi.push("son")
+// document.writeln("<br>")
+
+// //push: sona eklemek
+// dizi.push("son")
 
 //unshift:başa eklemek
-dizi.unshift("baş")
+// dizi.unshift("baş")
 
-//for of
-for ( let temp of dizi ) {
-  document.write(temp+" ")
-}
+// //for of
+// for ( let temp of dizi ) {
+//   document.write(temp+" ")
+// }
 
-document.writeln("<br>")
+// document.writeln("<br>")
 
-//pop: sondan 1 eleman çıkarmak
-dizi.pop()
+// //pop: sondan 1 eleman çıkarmak
+// dizi.pop()
 
-//unshift: baştan 1 eleman çıkarmak
-dizi.shift()
+// //unshift: baştan 1 eleman çıkarmak
+// dizi.shift()
 
-document.writeln("<br>")
-//for of
-for ( let temp of dizi ) {
-  document.write(temp+" ")
-}
+// document.writeln("<br>")
+// //for of
+// for ( let temp of dizi ) {
+//   document.write(temp+" ")
+// }
 
-
-}
+//}
 //dizi()
 
 //sort() reverse()
-let dizi2=()=>{
-  let arr=["malatya","istanbul","adana","bitlis"];
-  //arr.sort() //küçükten büyüğe sıralamak
-  //arr.reverse()
-  arr.sort().reverse() //büyükten küçüğe sıralama
-  for ( let temp of arr ) {
-    document.write(temp+" ")
-  }
-}
+// let dizi2=()=>{
+//   let arr=["malatya","istanbul","adana","bitlis"];
+//   //arr.sort() //küçükten büyüğe sıralamak
+//   //arr.reverse()
+//   arr.sort().reverse() //büyükten küçüğe sıralama
+//   for ( let temp of arr ) {
+//     document.write(temp+" ")
+//   }
+// }
 //dizi2()
 
-
 //toString() ==> //diziyi string'e çevirmek
-let dizi3=()=>{
-  let arr=["malatya","istanbul","adana","bitlis"];
+// let dizi3=()=>{
+//   let arr=["malatya","istanbul","adana","bitlis"];
 
-  
-  let str=arr.toString();
-  document.write(str.toUpperCase()+" ")
-}
+//   let str=arr.toString();
+//   document.write(str.toUpperCase()+" ")
+// }
 //dizi3()
 
-
 //split(): String', Diziye Çevirmek
-let dizi5=()=>{
-  let str="malatya~istanbul&adana&bitlis";
-  let arr2=str.split("&")
-  console.log(arr2)
-  for (let temp of arr2) {
-    document.writeln(temp)
-  }
-}
+// let dizi5=()=>{
+//   let str="malatya~istanbul&adana&bitlis";
+//   let arr2=str.split("&")
+//   console.log(arr2)
+//   for (let temp of arr2) {
+//     document.writeln(temp)
+//   }
+// }
 //dizi5()
 
 //concat() join()
-let dizi4=()=>{
-  let arr=["malatya","istanbul","adana","bitlis"];
+// let dizi4=()=>{
+//   let arr=["malatya","istanbul","adana","bitlis"];
 
-  //concat:string string'in 1 kere sonuna ekler
-  let str=arr.toString().concat("eklendi");
-  document.write(str.toUpperCase()+" ")
+//   //concat:string string'in 1 kere sonuna ekler
+//   let str=arr.toString().concat("eklendi");
+//   document.write(str.toUpperCase()+" ")
 
-  //join:string her bir elemanın sonuan 
-  let str2=arr.join(" + ")
-  document.write(str2.toUpperCase()+" ")
-}
+//   //join:string her bir elemanın sonuan
+//   let str2=arr.join(" + ")
+//   document.write(str2.toUpperCase()+" ")
+// }
 //dizi4()
 
 ////////////////////////////////////////////////
 
 //slice()
-let dizi6=()=>{
-  let arr=[0,1,2,3,4,5,6,7,8,9];
- 
-//3:eleman sayısı 
-// for (let temp of  arr.slice(3) ) {
+// let dizi6=()=>{
+//   let arr=[0,1,2,3,4,5,6,7,8,9];
+
+// //3:eleman sayısı
+// // for (let temp of  arr.slice(3) ) {
+// //   document.writeln(temp)
+// // }
+
+// for (let temp of  arr.slice(3,5) ) { //0<=X<3-1
 //   document.writeln(temp)
 // }
 
-for (let temp of  arr.slice(3,5) ) { //0<=X<3-1
-  document.writeln(temp)
-}
- 
-}
+//}
 //dizi6()
 
 //////////////////////////////////////////////////////////////
@@ -700,17 +696,17 @@ for (let temp of  arr.slice(3,5) ) { //0<=X<3-1
 //C#         ==> Multiple Thread
 //JavaScript ==> Single Thread
 
-function deneme1(){
-  console.log("Merhabalar-1")
-}
+// function deneme1(){
+//   console.log("Merhabalar-1")
+// }
 
-function deneme2(){
-  console.log("Merhabalar-2")
-}
-deneme2()
+// function deneme2(){
+//   console.log("Merhabalar-2")
+// }
+// deneme2()
 
-//2000ms = 2s
-setTimeout(deneme1,2000);
+// //2000ms = 2s
+// setTimeout(deneme1,2000);
 
 ///////////////////////////////////////////////////////////////
 //normal
@@ -724,14 +720,91 @@ setTimeout(deneme1,2000);
 // }
 // main(4,5)
 
-
 //callbackfunction
-function data(temp){
-  document.write("<br>"+temp+"<br>")
+// function data(temp){
+//   document.write("<br>"+temp+"<br>")
+// }
+
+// function main(number1,number2,callback){
+// let result=number1*number2;
+// callback(result)
+//}
+//main(4,5,data)
+
+///////////////////////////////////////////////////////////////
+
+//1-10 arasındaki random 5 tane sayımız olsun
+//1-) toplamı
+//2-) ortalaması
+//3-) en küçük sayı
+//4-) en büyük sayı
+
+
+///////////////////////////////////////////////////////////////
+
+
+// let array=[];
+// console.log(array)
+
+//object
+let object={
+"adi":"Hamit",
+"soyadi":"Mızrak",
+"deneyim":9,
+"isTurkish":true,
+"teknolojiler":["html5","css3","js"],
+"database":{
+  "name":"postgresql",
+  "isRelation":true,
 }
 
-function main(number1,number2,callback){
-let result=number1*number2;
-callback(result)
+};
+// console.log(object)
+// console.log(object.adi.toUpperCase())
+// console.log(object.teknolojiler[0])
+// console.log(object.database.name)
+
+// //create object attributes
+// object.meslek="Bilgisayar müh"
+// console.log(object.meslek)
+
+
+//literal template
+//1-)multiline
+// console.log("Jsp \nSpring")
+// console.log(`Jsp
+// Spring`)
+
+// //2-)interpolation
+// let name1="Jsp";
+// let name2="Spring";
+
+// console.log(name1+"\n"+name2)
+// console.log(`adı:${name1} 
+// soyadı:${name2}  `)
+
+
+// let htmlNormal=()=>{
+//   let adi="adim55",soyadi="soyadim55";
+// let html=
+// "<ul>"+
+//   "<li>" + adi+  "</li>"+
+//   "<li>" + soyadi+  "</li>"+
+// "</ul>";
+// document.body.innerHTML=html;
+// }
+// htmlNormal()
+
+//3-) Html Template
+let htmlTemplate=()=>{
+  let adi="adim55",soyadi="soyadim55";
+let html2=
+`
+<ul>
+  <li>${adi}</li>
+  <li>${soyadi}</li>
+</ul>
+`;
+document.body.innerHTML=html2;
 }
-main(4,5,data)
+htmlTemplate()
