@@ -641,11 +641,11 @@ let dizi2=()=>{
 //dizi2()
 
 
-//toStrin()
+//toString() ==> //diziyi string'e çevirmek
 let dizi3=()=>{
   let arr=["malatya","istanbul","adana","bitlis"];
 
-  //diziyi string'e çevirmek
+  
   let str=arr.toString();
   document.write(str.toUpperCase()+" ")
 }
@@ -657,11 +657,11 @@ let dizi5=()=>{
   let str="malatya~istanbul&adana&bitlis";
   let arr2=str.split("&")
   console.log(arr2)
-  for (let temp of arr2 ) {
+  for (let temp of arr2) {
     document.writeln(temp)
   }
 }
-dizi5()
+//dizi5()
 
 //concat() join()
 let dizi4=()=>{
@@ -677,10 +677,61 @@ let dizi4=()=>{
 }
 //dizi4()
 
+////////////////////////////////////////////////
+
+//slice()
+let dizi6=()=>{
+  let arr=[0,1,2,3,4,5,6,7,8,9];
+ 
+//3:eleman sayısı 
+// for (let temp of  arr.slice(3) ) {
+//   document.writeln(temp)
+// }
+
+for (let temp of  arr.slice(3,5) ) { //0<=X<3-1
+  document.writeln(temp)
+}
+ 
+}
+//dizi6()
+
+//////////////////////////////////////////////////////////////
+//Java       ==> Multiple Thread
+//C#         ==> Multiple Thread
+//JavaScript ==> Single Thread
+
+function deneme1(){
+  console.log("Merhabalar-1")
+}
+
+function deneme2(){
+  console.log("Merhabalar-2")
+}
+deneme2()
+
+//2000ms = 2s
+setTimeout(deneme1,2000);
+
+///////////////////////////////////////////////////////////////
+//normal
+// function data(temp){
+//   document.write("<br>"+temp+"<br>")
+// }
+
+// function main(number1,number2){
+// let result=number1*number2;
+// data(result)
+// }
+// main(4,5)
 
 
+//callbackfunction
+function data(temp){
+  document.write("<br>"+temp+"<br>")
+}
 
-
-
-
-//slice(),splice()
+function main(number1,number2,callback){
+let result=number1*number2;
+callback(result)
+}
+main(4,5,data)
