@@ -577,7 +577,7 @@ document.writeln('++++++++++++++++++++++++<br>')
 
 ////////////////////////////////////////////////////////////////////////////
 //Diziler
-
+//forin forof
 let dizi=()=>{
   //sıfırıncı indisten başlar
 let dizi=[1,2,3,true,"merhabalar"];
@@ -626,4 +626,61 @@ for ( let temp of dizi ) {
 
 
 }
-dizi()
+//dizi()
+
+//sort() reverse()
+let dizi2=()=>{
+  let arr=["malatya","istanbul","adana","bitlis"];
+  //arr.sort() //küçükten büyüğe sıralamak
+  //arr.reverse()
+  arr.sort().reverse() //büyükten küçüğe sıralama
+  for ( let temp of arr ) {
+    document.write(temp+" ")
+  }
+}
+//dizi2()
+
+
+//toStrin()
+let dizi3=()=>{
+  let arr=["malatya","istanbul","adana","bitlis"];
+
+  //diziyi string'e çevirmek
+  let str=arr.toString();
+  document.write(str.toUpperCase()+" ")
+}
+//dizi3()
+
+
+//split(): String', Diziye Çevirmek
+let dizi5=()=>{
+  let str="malatya~istanbul&adana&bitlis";
+  let arr2=str.split("&")
+  console.log(arr2)
+  for (let temp of arr2 ) {
+    document.writeln(temp)
+  }
+}
+dizi5()
+
+//concat() join()
+let dizi4=()=>{
+  let arr=["malatya","istanbul","adana","bitlis"];
+
+  //concat:string string'in 1 kere sonuna ekler
+  let str=arr.toString().concat("eklendi");
+  document.write(str.toUpperCase()+" ")
+
+  //join:string her bir elemanın sonuan 
+  let str2=arr.join(" + ")
+  document.write(str2.toUpperCase()+" ")
+}
+//dizi4()
+
+
+
+
+
+
+
+//slice(),splice()
