@@ -16,7 +16,26 @@
 </head>
 
 <body class="container bg-dark text-white mb-3">
+  <br>
+  <button onclick="sum()" class="btn btn-primary">onclick</button>
 
+  <button ondblclick="sum()" class="btn btn-warning">ondblclick</button>
+  <br>
+  <br>
+
+  <button onkeydown="sum()" class="btn btn-danger">onkeydown</button>
+
+  <button onkeyup="sum()" class="btn btn-success">onkeyup</button>
+  <br>
+  <br>
+  <button onmousedown="sum()" class="btn btn-outline-primary">onmousedown</button>
+  <button onmouseup="sum()" class="btn btn-outline-success">onmouseup</button>
+
+  <button onmouseenter="sum()" class="btn btn-outline-info">onmouseenter</button>
+
+  <button onmouseleave="sum()" class="btn btn-outline-warning">onmouseleave</button>
+
+  <button onmousewheel="sum()" class="btn btn-outline-secondary">onmousewheel</button>
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

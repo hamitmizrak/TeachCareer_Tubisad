@@ -36,7 +36,7 @@ multiLine Comment
 // document.write("<br>"+typeof variable);
 // document.write("==>"+variable);
 
-document.writeln('++++++++++++++++++++++++<br>')
+//document.writeln('++++++++++++++++++++++++<br>')
 // //variable rules English variable use
 // var rules=55;
 // var rulesProperty=55; //camel Case
@@ -739,9 +739,7 @@ document.writeln('++++++++++++++++++++++++<br>')
 //3-) en küçük sayı
 //4-) en büyük sayı
 
-
 ///////////////////////////////////////////////////////////////
-
 
 // let array=[];
 // console.log(array)
@@ -762,7 +760,7 @@ document.writeln('++++++++++++++++++++++++<br>')
 // }
 // };
 
- //console.log(object)
+//console.log(object)
 // console.log(object.adi.toUpperCase())
 // console.log(object.teknolojiler[0])
 // console.log(object.database.name)
@@ -772,11 +770,9 @@ document.writeln('++++++++++++++++++++++++<br>')
 // console.log(object["database"]["name44"])
 //console.log(object.adiSoyadi())
 
-
 // //create object attributes
 // object.meslek="Bilgisayar müh"
 // console.log(object.meslek)
-
 
 //literal template
 //1-)multiline
@@ -789,9 +785,8 @@ document.writeln('++++++++++++++++++++++++<br>')
 // let name2="Spring";
 
 // console.log(name1+"\n"+name2)
-// console.log(`adı:${name1} 
+// console.log(`adı:${name1}
 // soyadı:${name2}  `)
-
 
 // let htmlNormal=()=>{
 //   let adi="adim55",soyadi="soyadim55";
@@ -858,7 +853,7 @@ document.writeln('++++++++++++++++++++++++<br>')
 
 // let result=new Employee("Hamit","Mızrak");
 // result
-//Teacher name,surname,age 
+//Teacher name,surname,age
 //==> function retirementAge hesaplayan fonksiyon yazalım objemize ?
 //==> function birtday year  ?
 
@@ -877,8 +872,17 @@ document.writeln('++++++++++++++++++++++++<br>')
 // console.log(result.retirementAge())
 // console.log(`doğum tarihi: ${result.birtday()}`)
 
-  console.log("console.log")
-  console.info("console.info")
-  console.error("console.error")
-  console.warn("console.warn")
-  console.clear()
+//Console
+// console.log("console.log")
+// console.info("console.info")
+// console.error("console.error")
+// console.warn("console.warn")
+// console.clear()
+
+let sum = () => {
+  let number1 = 2,
+    number2 = 4,
+    number3
+  number3 = number2 + number1
+  console.log(number3)
+}
