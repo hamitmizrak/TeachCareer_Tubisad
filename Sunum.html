@@ -1,13 +1,92 @@
 Sweet alert : Fuat
+################################################################
+Sweet Alert
+Sweet alert, görsel olarak güzel bir görüntü sağlamak için kullanılır.
+Sweet Alert’i dosyamıza include etmek için aşağıdaki linki
+
+<head></head>
+etiketleri arasına koymamız gerekir.
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+Sonrasında Sweet Alert kodlarımızı ister
+<script></script> etiketleri arasına
+internal olarak ekleriz ister de external olarak .js dosyasına yazarız.
+Yukarıdaki gibi bir alert kutusu elde etmemiz için gerekli kodlar; (Internal
+olarak)
+<script> function SweetAlert() {
+        swal({
+            title: "Kaydınız ALındı",
+            text: "Email adresinizi kontrol ediniz",
+            icon: "success",
+            button: "Tamam",
+        });
+    }
+</script>
+Title: Alert başlığı
+Text: Alert gövde metni
+İcon: Alert’te görünmesini istediğimiz şekil
+Button: Buton üzerindeki yazı
+Not: icon olarak “warning”, “error” ve “info” da kullanılabilir.
+Yukarıdaki kodları yazdıktan sonra geriye sadece bu Sweet Alert’i
+kullanacağımız yere koymamız kalıyor. Örnek olarak bir butona tıklandığında
+görünmesini istiyorsak şu şekilde kullanabiliriz.
+<button onclick="SweetAlert()" type="button”>Register</button>
+Daha fazla bilgi için https://sweetalert.js.org/guides adresini ziyaret
+edebilirsiniz.
+
 
 merge-rebase fark : Mehmet
 
-Melisa:
 
-
+################################################################
 text-reset : Uğur
 
+Text-reset
+Bootstrap komutları içerisinde yer alan ve metinleri düzenlememize yardımcı olan, Text-reset komutu bir text'in ya da
+linkin rengini sıfırlamamıza yarar. Bu komutu kullandıktan sonra kullandığım element rengini üst ögeden yani parent'dan
+alır.
+Bunun yanında text-muted veya text-success gibi ek renklendirme komutları verebilriz.
+
+örnek kod bloğu:
+<p class="text-warning">
+    Warning text with a <a href="#" class="text-reset">reset link</a>.
+</p>
+Burada a tag’ı, ‘’text-warning’’ rengini alacaktır.
+
+// -------------------------------------------------------------------------- //
+
+For ve While döngüsü arasındaki farklar.
+While Döngüsü:
+While döngüsünde, içerisine yazdığımız koşul sağlanana kadar çalışmaya devam eder.
+
+let text = "";
+let i = 0;
+while (i < 10) { text +="<br>The number is " + i; i++; } document.getElementById("demo").innerHTML=text; For Döngüsü:
+    For döngüsünde ise bir kod bloğu içerisinde istediğimiz kadar çalıştırabiliriz. for (let t=10; t<20; t++ ){
+    document.write("The number is " + t + " <br>");
+    }
+
+    Iki döngü arasındaki farklar:
+
+    En temel farklardan biri ise for döngüsünde ‘’iterative’’ yani tekrarlayan bir yapıdır. While ise bir koşulumuz
+    sağlanana kadar devam etmesini istediğimiz durumlarda kullanırız.
+    Örneğin, kullanıcıdan aldığımız bir sayının içerisinde ne kadar asal sayı olduğunu bulmak istiyorsak burada for
+    döngüsünü kullanmamız daha yerinde olacaktır.
+    Ancak bir işlemi doğrulamak istediğimizi varsayalım. Sitemizde bulunan mail yollama bölümünden kullanıcının bizimle
+    iletişime geçmesine olanak verelim. Ancak bu iletişim sistemini spamdan korumak için basit bir toplama işlemi araya
+    koyalım. Kullanıcı bu işlemin sonucunu doğru girdiğinde mail yollayabilsin, bu işlemin sonucunu yanlış girdiğinde
+    ise farklı bir toplama işlemi karşısına çıkartarak tekrar hesaplamasını isteyelim. Bu durum da ise while döngüsünü
+    kullanmamız daha doğru olacaktır. For döngüsü kullanırken koşul kısmına 3 adet paremetre girebiliriz, while dönüsü
+    için ise 1 adet parametre girebiliriz.
+
 AsciiCode - UniCode : Muhammed
+################################################################
+KISACA ASCII VE UNICODE
+ASCII kodu ,bizim bilgisayarda görsel olarak girdiğimiz karakter, harf ve
+rakamların bilgisayar dilindeki temsil edilme şeklidir diyebiliriz.
+UNICODE ,dijital medyada karakter ve sembolleri benzersiz bir rakam ile
+oluşturmak için geliştirilen bir metin standartıdır. Adı “Universal” ve “Code”
+kelimelerinin bir araya getirilmesiyle oluşmuştur.
+
 
 Alphan Elmas: //run time error - compiler error - syntax error
 ################################################################

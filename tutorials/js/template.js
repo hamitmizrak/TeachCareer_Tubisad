@@ -770,7 +770,7 @@ let object={
 // console.log(object.database)
 // console.log(object.database["name44"])
 // console.log(object["database"]["name44"])
-console.log(object.adiSoyadi())
+//console.log(object.adiSoyadi())
 
 
 // //create object attributes
