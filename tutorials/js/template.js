@@ -862,17 +862,23 @@ document.writeln('++++++++++++++++++++++++<br>')
 //==> function retirementAge hesaplayan fonksiyon yazalım objemize ?
 //==> function birtday year  ?
 
-function Teacher(name,surname,age){
-  this.name=name;
-  this.surname=surname;
-  this.age=age;
-  console.log(this)
-  this.retirementAge=function(){
-     return 60-age
-    }
-    this.birtday=()=>{ return new Date().getFullYear()-this.age}
-}
+// function Teacher(name,surname,age){
+//   this.name=name;
+//   this.surname=surname;
+//   this.age=age;
+//   console.log(this)
+//   this.retirementAge=function(){
+//      return 60-age
+//     }
+//     this.birtday=()=>{ return new Date().getFullYear()-this.age}
+// }
 
-let result=new Teacher("Halil","Can",25)
-console.log(result.retirementAge())
-console.log(`doğum tarihi: ${result.birtday()}`)
+// let result=new Teacher("Halil","Can",25)
+// console.log(result.retirementAge())
+// console.log(`doğum tarihi: ${result.birtday()}`)
+
+  console.log("console.log")
+  console.info("console.info")
+  console.error("console.error")
+  console.warn("console.warn")
+  console.clear()
