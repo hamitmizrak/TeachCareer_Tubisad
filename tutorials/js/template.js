@@ -747,21 +747,21 @@ document.writeln('++++++++++++++++++++++++<br>')
 // console.log(array)
 
 //object
-let object={
-"adi":"Hamit",
-"soyadi":"Mızrak",
-"deneyim":9,
-"isTurkish":true,
-"teknolojiler":["html5","css3","js"],
-"database":{
-  "name44":"postgresql",
-  "isRelation":true,
-},
-"adiSoyadi":function(){
- return this.adi+" "+this.soyadi;
-}
+// let object={
+// "adi":"Hamit",
+// "soyadi":"Mızrak",
+// "deneyim":9,
+// "isTurkish":true,
+// "teknolojiler":["html5","css3","js"],
+// "database":{
+//   "name44":"postgresql",
+//   "isRelation":true,
+// },
+// "adiSoyadi":function(){
+//  return this.adi+" "+this.soyadi;
+// }
+// };
 
-};
  //console.log(object)
 // console.log(object.adi.toUpperCase())
 // console.log(object.teknolojiler[0])
@@ -828,3 +828,51 @@ let object={
 
 // let result=new Student("Hamit","Mızrak");
 // console.log(`adim:${result.adi} soyadi:${result.soyadi}`)
+
+///////////////////////////////////////////////////////////////
+// let software={
+//   "database":"mysql",
+//   "frontend":"Html5",
+//   "fullSoftWare":function(){
+//     return  this.database.toUpperCase()+" " +this.frontend;
+//   }
+// };
+// console.log(software);
+// console.log(software.database);
+// console.log(software.fullSoftWare());
+
+// //object create
+// software.backend="nodejs";
+// console.log(software.backend);
+
+// //delete
+// delete software.backend
+// console.log(software.backend);
+///////////////////////////////////////////////////////////////
+//constructor:yapıcı metotlar
+// function Employee(name,surname){
+// this.name=name;
+// this.surname=surname;
+// console.log(this)
+// }
+
+// let result=new Employee("Hamit","Mızrak");
+// result
+//Teacher name,surname,age 
+//==> function retirementAge hesaplayan fonksiyon yazalım objemize ?
+//==> function birtday year  ?
+
+function Teacher(name,surname,age){
+  this.name=name;
+  this.surname=surname;
+  this.age=age;
+  console.log(this)
+  this.retirementAge=function(){
+     return 60-age
+    }
+    this.birtday=()=>{ return new Date().getFullYear()-this.age}
+}
+
+let result=new Teacher("Halil","Can",25)
+console.log(result.retirementAge())
+console.log(`doğum tarihi: ${result.birtday()}`)
