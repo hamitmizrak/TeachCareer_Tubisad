@@ -879,10 +879,21 @@ multiLine Comment
 // console.warn("console.warn")
 // console.clear()
 
-let sum = () => {
-  let number1 = 2,
-    number2 = 4,
-    number3
-  number3 = number2 + number1
-  console.log(number3)
+// let sum = () => {
+//   let number1 = 2,
+//     number2 = 4,
+//     number3
+//   number3 = number2 + number1
+//   console.log(number3)
+// }
+
+let dom=()=>{
+  //alert("success")
+   //console.log(document.getElementById("dom_id"))  
+   
+  // document.getElementById("dom_id").innerHTML="<b><mark><i>Değişti</i></mark></b>";
+  // document.getElementById("dom_id").innerHTML= prompt("Data");
+
+  //document.getElementById("dom_id").innerText="<b><mark><i>Değişti</i></mark></b>";
+
 }
