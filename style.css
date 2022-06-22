@@ -107,9 +107,6 @@ p{
 }
 
 /* ############################################################################ */
-
-
-
 /* header */
 header{
     background-image: url("picture/header.jpg");
@@ -120,12 +117,16 @@ header{
     padding-top:9rem;
 }
 
+/* ##############################################################################*/
 /* main */
 #ability i{
     color:red;
     font-size: 8rem;
 }
 
+#ability,#section_3,#section_2,#section_6{
+    margin-bottom:6rem;
+}
 
 #ability .card{
     box-shadow: 1px 1px 8px 1px rgba(0,0,0,.8);
@@ -166,8 +167,6 @@ margin-bottom:2rem;
     /* column-count: 3;
     
     column-rule:solid rgba(0,0,0,.6); */
-
-  
 }
 
 /* back_to_top */
