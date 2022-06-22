@@ -113,8 +113,8 @@ header{
     background-size: cover;
     background-position: 50% 50%;
     z-index:-1;
-    height:40rem;
-    padding-top:9rem;
+    height:50rem;
+    padding-top:15rem;
 }
 
 /* ##############################################################################*/
@@ -123,14 +123,13 @@ header{
 /* section-1 */
 #ability {
    padding: 6rem; 
-   background:rgba(0,0,0,9)
+   background:rgba(0,0,0,8);
 }
 
 #ability i{
     color:red;
     font-size: 8rem;
 }
-
 
 /* #ability,#section_3,#section_2,#section_6{
     margin-bottom:6rem;
@@ -145,7 +144,17 @@ header{
    opacity:.7;
 }
 
-/* section-2 */
+/* section-2: blog */
+#section_2{
+    background: url('picture/coffee-g4d61840d9_1920.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity:.9;
+    padding:6rem;
+}
+
+
+
 #section_2 .card{
 margin-bottom:2rem;
 }
