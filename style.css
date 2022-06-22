@@ -123,7 +123,7 @@ header{
 /* section-1 */
 #ability {
    padding: 6rem; 
-   background:rgba(0,0,0,8);
+   background:#3D3D3D;
 }
 
 #ability i{
@@ -153,8 +153,6 @@ header{
     padding:6rem;
 }
 
-
-
 #section_2 .card{
 margin-bottom:2rem;
 }
@@ -183,7 +181,6 @@ margin-bottom:2rem;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-indent: 3rem;
-
     /* column-count: 3;
     column-rule:solid rgba(0,0,0,.6); */
 }
@@ -206,6 +203,12 @@ margin-bottom:2rem;
     opacity:.9;
 }
 
+
+#section_6{
+    padding:8rem;
+    background:#313131;
+}
+
 /* ################################################################# */
 
 #contact_form>.row>div{
@@ -217,8 +220,6 @@ margin-bottom:2rem;
     padding:1rem;
     
 }
-
-
 
 /* ################################################################# */
 
