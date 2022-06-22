@@ -13,7 +13,8 @@ project version: v.1
 }
 
 body{
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     background:#edeff1;
 }
@@ -114,6 +115,22 @@ header{
    opacity:.7;
 }
 
+/* back_to_top */
+#back_top{
+    position:fixed;
+    right:0;
+    bottom:0;
+    width:5.4rem;
+    padding-top:.5rem;
+    margin-right: .4rem;
+    margin-bottom: .4rem;
+    border-radius: .4rem;
+}
+
+#back_top:hover{
+    width:7rem;
+    opacity:.8;
+}
 
 /* footer */
 footer{
