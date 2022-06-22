@@ -155,6 +155,21 @@ margin-bottom:2rem;
 }
 
 
+/* section-3 */
+#newspaper_id{
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-indent: 3rem;
+
+    /* column-count: 3;
+    
+    column-rule:solid rgba(0,0,0,.6); */
+
+  
+}
+
 /* back_to_top */
 #back_top{
     position:fixed;
@@ -172,6 +187,22 @@ margin-bottom:2rem;
     width:7rem;
     opacity:.9;
 }
+
+/* ################################################################# */
+
+#contact_form>.row>div{
+    margin-bottom: .6rem;
+}
+
+#contact_form{
+    background: rgba(0,0,0,0.8);
+    padding:1rem;
+    
+}
+
+
+
+/* ################################################################# */
 
 /* footer */
 footer{
