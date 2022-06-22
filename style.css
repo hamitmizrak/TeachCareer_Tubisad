@@ -77,6 +77,10 @@ p{
 
 
 /*  nav */
+#navbar{
+    opacity:.9;
+}
+
 #logo_div{
     /* border-radius:50%; */
    
@@ -87,7 +91,24 @@ p{
     width: 10rem;
 }
 
+
+#navbar_id ul>li>a{
+    font-size:.8rem;
+}
+
+#navbar_id ul>li>a>i{
+    margin-right: .5rem;
+    font-size:.8rem;
+    color:chartreuse;
+}
+
+#right_navbar>button,a{
+    font-size:.8rem;
+}
+
 /* ############################################################################ */
+
+
 
 /* header */
 header{
@@ -100,17 +121,17 @@ header{
 }
 
 /* main */
-#header_icon i{
+#ability i{
     color:red;
     font-size: 8rem;
 }
 
 
-#header_icon .card{
+#ability .card{
     box-shadow: 1px 1px 8px 1px rgba(0,0,0,.8);
 }
 
-#header_icon .card:hover{
+#ability .card:hover{
    cursor:pointer;
    opacity:.7;
 }
@@ -162,6 +183,11 @@ footer{
 #address_id i{
     margin-right:.6rem;
     color:blueviolet;
+}
+
+#address_id a{
+    color:chartreuse;
+    font-size:.8rem;
 }
 
 #copy_right{
