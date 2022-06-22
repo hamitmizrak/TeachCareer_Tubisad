@@ -119,14 +119,22 @@ header{
 
 /* ##############################################################################*/
 /* main */
+
+/* section-1 */
+#ability {
+   padding: 6rem; 
+   background:rgba(0,0,0,9)
+}
+
 #ability i{
     color:red;
     font-size: 8rem;
 }
 
-#ability,#section_3,#section_2,#section_6{
+
+/* #ability,#section_3,#section_2,#section_6{
     margin-bottom:6rem;
-}
+} */
 
 #ability .card{
     box-shadow: 1px 1px 8px 1px rgba(0,0,0,.8);
@@ -142,7 +150,6 @@ header{
 margin-bottom:2rem;
 }
 
-
 #section_2 .card .card-text{
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -157,6 +164,10 @@ margin-bottom:2rem;
 
 
 /* section-3 */
+#section_3{
+    background: rgba(255,255,255,.8);
+    padding:9rem;
+}
 #newspaper_id{
     display: -webkit-box;
     -webkit-line-clamp: 12;
@@ -165,7 +176,6 @@ margin-bottom:2rem;
     text-indent: 3rem;
 
     /* column-count: 3;
-    
     column-rule:solid rgba(0,0,0,.6); */
 }
 
