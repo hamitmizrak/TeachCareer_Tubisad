@@ -115,6 +115,25 @@ header{
    opacity:.7;
 }
 
+/* section-2 */
+#section_2 .card{
+margin-bottom:2rem;
+}
+
+
+#section_2 .card .card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#section_2 .card>img:hover{
+    opacity:.8;
+    cursor:pointer;
+}
+
+
 /* back_to_top */
 #back_top{
     position:fixed;
