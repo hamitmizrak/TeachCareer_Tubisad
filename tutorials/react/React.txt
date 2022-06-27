@@ -1,0 +1,53 @@
+node -v 
+npm  -v 
+npm update
+
+//////////////////////////////////////////////////////////////
+
+https://www.npmjs.com/package/react
+https://nodejs.org/en/download/
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+///////////////////////////////////////////////////////////
+npm bin -g 
+npm update 
+npm install
+npm start
+
+--save  --save-dev 
+/////////////////////////////////////////////////////////////
+node_modules
+npx create-react-app blog
+cd blog 
+npm start 
+
+/////////////////////////////////////////////////////////////
+setting ==> setting.json ==>
+ // emmet active 
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  /////////////////////////////////////////////////////////////
+React mutlaka en az 1 tane div olsun
+React ==> function component (rfc) ==>TAB) , render yazmayacağız
+React ==> class component    (rcc) ==>TAB) , render olacaktır
+
+React ==> {}
+React ==> this. 
+React ==> className (bootstrap) 
+React ==> (bootstrap) 
+React ==> camelCase
+
+NORMAL                          React
+class                           className
+style={background-color:red}    style={{backgroundColor:"red"}}
+
+/////////////////////////////////////////////////////////////////
+props : componentler arasında veri aktarımı
+propsTypes: type safe 
+key   : döngülerde benzersiz bir anahtar oluştursun ki bir daha compiler yapmayayım
+constructor: class new(instance) o zaman çalışsın.
+super(props):
+state : durum 
+setState: state güncellme 

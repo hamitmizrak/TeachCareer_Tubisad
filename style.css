@@ -110,7 +110,7 @@ header {
   background-size: cover;
   background-position: 50% 50%;
   z-index: -1;
-  height: 50rem;
+  height: 110vh;
   padding-top: 15rem;
 }
 
@@ -142,14 +142,31 @@ header {
 }
 
 /* section-2: blog */
-#section_2 {
+/* #section_2 {
   background: url('picture/coffee-g4d61840d9_1920.jpg');
   background-size: cover;
   background-position: 50% 50%;
   opacity: 0.9;
   padding: 6rem;
+} */
+
+/* resim arka planda blur */
+#section_2{
+    position: relative; 
+}
+#section_2::before {  
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: "";
+    background-image: url('picture/office-gc2455a673_1920.jpg');
+    background-size: cover;
+    opacity: 0.8;
 }
 
+/* card */
 #section_2 .card {
   margin-bottom: 2rem;
 }
@@ -226,6 +243,7 @@ header {
 #section_7>img:hover{
     opacity: 0.9;
 }
+
 
 /* ################################################################# */
 
