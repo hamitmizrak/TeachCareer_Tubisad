@@ -131,5 +131,28 @@ export default function App() {
 /////////////////////////////////////////////////////
 
 Babel + Webpack+ dev-Server+EsLint ==> Melike
+Babel: Babel bir javascript transcompilerdır. Yani javascript’in bir versiyonunda (örneğin EcmaScript6 ile yazılmış)
+yazılmış bir kodu,
+tüm tarayıcıların desteklediği EcmaScript5 koduna çevirmek için kullanılır.
+https://kangax.github.io/compat-table/es6/
+
+Webpack: JavaScript dosyalarını tek parça haline getirmek için kullanılan bir modül paketleyicisidir. Neden kullanılır;
+Kullanılan çoğu JavaScript uygulaması başka bir JavaScript dosyalarında yer alan kütüphaneye ihtiyaç duymaktadır.
+JavaScript dosyalarının artması beraberinde web sayfalarının yavaş açılmalarına neden olur.
+Bu yavaşlığın önüne geçebilmek için de JavaScript dosyalarının birleştirilmesi gerekir.
+
+DevServer: Webpack dev server webpack işlemlerini yapar ve geliştirilen uygulama için bir web sunucusu oluşturmaya imkan
+verir.
+DevServer sayesinde projemiz yerel ağda bize otomatik olarak sunulur.
+
+EsLink: ES → EcmaScript + Lint → Linter = EsLint. Temel çalışma mantığı; bir takım kurallar doğrultusunda kodunuzu
+tarayıp
+bunun ile ilgili uyarıları vererek geliştiricileri uyarıyor. Sadece bir hata ayıklayıcı değil, yazdığınız kodu belirli
+standartlara göre yazmanızı sağlayan,
+yazmadığınızda ise yine sizin belirlediğiniz öncelikte bildirimler(mesela warn, error)
+veren bir lintermodülüdür.
+
+
+//////////////////////////////////////////////////////////////////
 Framework ile Libraries arasındaki fark ==> Mehmet
 
