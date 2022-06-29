@@ -150,6 +150,17 @@ header {
   opacity: 0.7;
 }
 
+.parallax_class{
+  background-color:transparent;
+  background-image: url('picture/transparent.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height:20rem;
+  padding:2rem;
+  opacity:.8;
+}
+
 /* section-2: blog */
 /* #section_2 {
   background: url('picture/coffee-g4d61840d9_1920.jpg');
