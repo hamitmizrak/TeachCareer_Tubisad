@@ -137,8 +137,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Login</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h6 class="modal-title">Login</h6>
+                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -146,10 +146,12 @@
                         <div class="form-outline mb-4">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-1"> <label class="form-label" for="form2Example1">
+                                    <div class="col-1"> <label class="form-label" for="user_email">
                                             <i class="fa-solid fa-envelope"></i>
                                         </label></div>
-                                    <div class="col"> <input type="email" id="form2Example1" class="form-control" />
+                                    <div class="col">
+                                        <input type="text" id="user_email" name="user_email" placeholder="email adresiniz ..." class="form-control" />
+                                        <span id="validation_email" class="text-danger" style="font-size:.8rem ;"></span>
                                     </div>
                                 </div>
                             </div>
@@ -159,66 +161,34 @@
                         <div class="form-outline mb-4">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-1"> <label class="form-label" for="form2Example2">
+                                    <div class="col-1"> <label class="form-label" for="user_password">
                                             <i class="fa-solid fa-key"></i>
                                         </label></div>
-                                    <div class="col"> <input type="email" id="form2Example2" class="form-control" />
+                                    <div class="col">
+                                        <input type="text" id="user_password" name="user_password" placeholder="şifreniz ..." class="form-control" />
+                                        <span id="validation_password" class="text-danger" style="font-size:.8rem ;"></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="mt-2 mb-2">
-                            <button type="reset" class="btn btn-danger btn-block ">Temizle</button>
-                            <button type="submit" class="btn btn-primary btn-block ">Sign in</button>
-                        </div>
-
-
-                        <!-- 2 column grid layout for inline styling -->
-                        <div class="row mb-4">
-                            <div class="col d-flex justify-content-center ">
-                                <!-- Checkbox -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="form2Example34"
-                                        checked />
-                                    <label class="form-check-label" for="form2Example34"> Remember me </label>
+                        <div class="form-outline mt-2 mb-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="form2Example1">
+                                        </label></div>
+                                    <div class="col">
+                                        <button type="reset" class="btn btn-outline-danger">Temizle</button>
+                                        <button id="btnSubmit" type="submit" class="btn btn-outline-primary">Giriş
+                                            Yap</button>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col">
-                                <a href="#!">Forgot password?</a>
-                            </div>
-
-                            <div class="col">
-                                <a href="#!">Register</a>
-                            </div>
-
                         </div>
-
-
-                        <!-- Register buttons -->
-                        <div class="text-center">
-
-                            <button type="button" class="btn btn-primary btn-floating mx-1 rounded-circle">
-                                <i class="fab fa-facebook-f"></i>
-                            </button>
-
-                            <button type="button" class="btn btn-primary btn-floating mx-1 rounded-circle">
-                                <i class="fab fa-google"></i>
-                            </button>
-
-                            <button type="button" class="btn btn-primary btn-floating mx-1 rounded-circle">
-                                <i class="fab fa-twitter"></i>
-                            </button>
-
-                            <button type="button" class="btn btn-primary btn-floating mx-1 rounded-circle">
-                                <i class="fab fa-github"></i>
-                            </button>
-                        </div>
-                    </form>
                 </div>
-            </div>
-        </div>
+                </form>
+                </div>
+                </div>
+                </div>
     </div>
     <!-- modal-login ends -->
 
@@ -356,11 +326,17 @@
         <!-- parallax scrolling start -->
         <section class="parallax_class">
             <div class="container">
-                <h2 class="text-center">Parallax Data</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae alias ad nam, dolorum praesentium aspernatur dolores recusandae, animi maiores, natus debitis nesciunt nobis ex molestiae quidem in nemo ullam doloribus.
-                Molestias delectus deleniti distinctio eaque consectetur vitae cumque optio. Voluptates ducimus temporibus optio nam nisi asperiores amet necessitatibus molestias dolores nostrum ab soluta nihil, eligendi debitis eaque vero facere quia.
-                Earum doloribus accusantium assumenda ea nobis, laudantium mollitia nihil necessitatibus debitis est ex minus soluta eos ducimus magni reiciendis suscipit quos provident illo? Eius, tempore delectus temporibus doloremque impedit fuga.</p>
                 <div class="row">
+                    <h2 class="text-center">Parallax Data</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae alias ad nam, dolorum praesentium
+                        aspernatur dolores recusandae, animi maiores, natus debitis nesciunt nobis ex molestiae quidem
+                        in nemo ullam doloribus.
+                        Molestias delectus deleniti distinctio eaque consectetur vitae cumque optio. Voluptates ducimus
+                        temporibus optio nam nisi asperiores amet necessitatibus molestias dolores nostrum ab soluta
+                        nihil, eligendi debitis eaque vero facere quia.
+                        Earum doloribus accusantium assumenda ea nobis, laudantium mollitia nihil necessitatibus debitis
+                        est ex minus soluta eos ducimus magni reiciendis suscipit quos provident illo? Eius, tempore
+                        delectus temporibus doloremque impedit fuga.</p>
                     <div class="col-12 text-center"><button class="btn btn-outline-primary">More ...</button></div>
                 </div>
             </div>
@@ -451,7 +427,7 @@
                 <div class="row">
                     <h2 class="text-uppercase display-6 text-center wow rotateInDownLeft animated mb-4" data-wow-delay=".40">
                         Blog</h2>
-    
+
                     <div class="col-md-3">
                         <div class="card">
                             <img class="card-img-top" src="picture/transparent.jpg" alt="Title">

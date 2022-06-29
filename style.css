@@ -158,7 +158,6 @@ header {
   background-attachment: fixed;
   height:20rem;
   padding:2rem;
-  opacity:.8;
 }
 
 /* section-2: blog */
@@ -174,7 +173,7 @@ header {
 #section_2{
     position: relative; 
 }
-#section_2::before {  
+#section_2::before{  
     position: absolute;
     top: 0px;
     right: 0px;
@@ -183,7 +182,7 @@ header {
     content: "";
     background-image: url('picture/office-gc2455a673_1920.jpg');
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /* card */
