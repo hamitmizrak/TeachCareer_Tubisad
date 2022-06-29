@@ -13,15 +13,12 @@ function App() {
     <>
     <Router>
       <HeaderComponent />
-
       <div className="container">
        <Switch>
         <Route path="/" exact component={ListEmployeeComponent} />
         <Route path="/employees"  component={ListEmployeeComponent} />
        </Switch>
-
       </div>
-
       <FooterComponent />
       </Router>
     </>
