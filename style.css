@@ -117,6 +117,15 @@ header {
 /* ##############################################################################*/
 /* main */
 
+#section10 {
+  margin-bottom: 4rem;
+  margin-top:2rem;
+}
+
+#section10  .icon_message  i{
+  font-size:6rem;
+}
+
 /* section-1 */
 #ability {
   padding: 6rem;
