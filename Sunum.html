@@ -97,5 +97,39 @@ let dizi=[]   ile  let dizi2=new Array()  Musab:
 
 
 ////////////////////////////////////////
+Router => Gizem 
+
+React Router Nedir?
+
+Yönlendirme, bir kullanıcı bir URL girdiğinde veya uygulama içindeki bir öğeyi (bağlantı, düğme, simge, resim vb.) tıkladığında uygulamanın farklı bölümleri arasında hareket etme yeteneğidir. React Router sayfalar arası geçiş işlemi için kullanılan en popüler ve standart kütüphanedir.
+
+Üç farklı çeşidi vardır;
+- react-router: Ana kütüphanedir.
+- react-router-dom: Web routing işlemleri için kullanılır.
+- react-router-native: Mobildeki routing işlemleri için kullanılır.
+
+Hedeflediğimiz platforma bağlı olarak yararlanabileceğimiz bir dizi yönlendirici içerir. Bunlara BrowserRouter, HashRouter ve MemoryRouter dahildir. BrowserRouter, her tür URL'yi nasıl işleyeceğini bilen dinamik bir sunucuya sahip uygulamalar için kullanılırken, HashRouter, yalnızca bildiği dosya isteklerine yanıt veren bir sunucuya sahip statik web siteleri için kullanılır.
+Web uygulamaları için npm install --save react-router-dom komutunu projemize dahil ederek kullanmaya başlayabiliriz.
+
+Aşağıda route işleminin yapıldı bir kod mecvuttur. BrowserRouter, Router ve Route sırası sabittir ve bu sıra ile kullanılır. Path prop’una yönledirmek istediğimiz sayfaların uzantılarını verebiliriz. Element prop’u görünmesini istediğimiz component’ımızı eklediğimiz proptur. 
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+/////////////////////////////////////////////////////
+
 Babel + Webpack+ dev-Server+EsLint ==> Melike
 Framework ile Libraries arasındaki fark ==> Mehmet
+
