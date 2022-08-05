@@ -1,0 +1,8 @@
+/dist
+/node_modules
+/assets/build
+/assets/config
+/assets/public
+/scripts
+/config
+/other
