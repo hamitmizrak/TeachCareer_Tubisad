@@ -14,6 +14,7 @@ Node js
 
 ## Visual Studio codes
 Extensisons
+- Tabnine
 - Browser preview
 - Auto Close tag
 - Auto import
@@ -24,7 +25,7 @@ Extensisons
 - Es7+ React/REdux/React-Native snippets
 - Html Snippets
 - JsQuery Snippets
-- Live Server
+- Live Server 
 - Material Icon Theme
 - Open-in-Browser
 - Path Intellisense
