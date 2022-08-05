@@ -222,7 +222,7 @@ header {
   position: fixed;
   right: 0;
   bottom: 0;
-  width: 5.4rem;
+  width: 2.6rem;
   padding-top: 0.5rem;
   margin-right: 0.4rem;
   margin-bottom: 0.4rem;
@@ -261,6 +261,39 @@ header {
 
 #section_7>img:hover{
     opacity: 0.9;
+}
+
+
+/* ################################################################# */
+#counter {
+  padding-top:2rem;
+  padding-bottom:2rem;
+  background-color: rgba(60, 40, 215, 0.6);
+}
+
+#counter .counter-header h3,
+#counter .counter-header p {
+  color: #fff;
+  text-align: center;
+}
+
+#counter .counters {
+  padding-top: 40px;
+}
+
+#counter .counters span {
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #fff;
+}
+
+#counter .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #cce5ff;
 }
 
 

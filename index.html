@@ -42,7 +42,6 @@
 <!-- wow js-->
 <script src="js/wow.min.js"></script>
 <script> new WOW().init() </script>
-
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
@@ -118,7 +117,7 @@
                         class="btn btn-primary btn-sm me-3">
                         Register
                     </button>
-                    <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
+                    <a class="btn btn-dark px-3" href="https://github.com/hamitmizrak/TeachCareer_Tubisad" role="button"><i
                             class="fab fa-github"></i></a>
                 </div>
             </div>
@@ -150,7 +149,8 @@
                                             <i class="fa-solid fa-envelope"></i>
                                         </label></div>
                                     <div class="col">
-                                        <input type="text" id="user_email" name="user_email" placeholder="email adresiniz ..." class="form-control" />
+                                        <input type="text" id="user_email" name="user_email" placeholder="email adresiniz ..." class="form-control" required
+                                            autofocus />
                                         <span id="validation_email" class="text-danger" style="font-size:.8rem ;"></span>
                                     </div>
                                 </div>
@@ -194,36 +194,104 @@
 
 
     <!-- Modal Register -->
-    <div class="modal fade" id="registerId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-        aria-hidden="true">
+        <!-- Modal Register Start -->
+        <div class="modal fade" id="registerId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <!-- modal header -->
+            <div class="modal-header">
+            <h5 class="modal-title">Register</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- modal body -->
+            <div class="modal-body">
+            <form>
+                <!-- User name input -->
+                <div class="form-outline mb-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-1">
+                                <label class="form-label" for="register_name">
+                                    <i class="fa-solid fa-user pt-2"></i>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <input type="text" id="register_name" name="register_name" placeholder="kullanıcı adınız..."
+                                    class="form-control" autofocus required />
+                                <span id="validation_registerName" class="text-danger" style="font-size: 0.8rem"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    Body
+            
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-1">
+                                <label class="form-label" for="register_email">
+                                    <i class="fa-solid fa-envelope pt-2"></i>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <input type="email" id="register_email" name="register_email" placeholder="email adresiniz..."
+                                    class="form-control" required />
+                                <span id="validation_registerEmail" class="text-danger" style="font-size: 0.8rem"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
+            
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-1">
+                                <label class="form-label" for="register_password">
+                                    <i class="fa-solid fa-key pt-2"></i>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <input type="password" id="register_password" name="register_password" placeholder="şifreniz..."
+                                    class="form-control" required />
+                                <span id="validation_registerPassword" class="text-danger" style="font-size: 0.8rem"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            
+                <!-- button -->
+                <div class="container">
+                    <div class="mt-2 mb-2">
+                        <button type="submit" id="btnSubmit2" class="btn btn-primary btn-block w-100 btn-sm">
+                            Kayıt Ol
+                        </button>
+                    </div>
+                </div>
+            </form>
+            </div>
             </div>
         </div>
     </div>
-    <!-- navbar end -->
+    <!-- Modal Register End -->
+    <!-- Register end -->
 
     <!-- header-start -->
     <header id="header">
         <div class="jumbotron text-white">
             <div class="container" style="opacity:.9">
                 <div class="p-5 text-center">
-                    <h1 class="text-uppercase display-3 shadow wow bounceIn animated" data-wow-delay=".40s">fronend
+                    <h1 class="text-uppercase display-3 shadow wow bounceIn animated" data-wow-delay=".40s">Tubisad fronend
                         Eğitimimize hoşgeldiniz</h1>
                     <h4 class="wow bounceIn animated" data-wow-delay=".50s">Html5 Css3 Bootstrap RD</h4>
                     <a class="btn btn-outline-warning shadow wow bounceIn animated" data-wow-delay=".50s" href="#">Bizi
                         Takip Edin</a>
+                        <a href="https://www.linkedin.com/in/hamit-m-a569ba129/" class="btn btn-outline-primary shadow wow bounceIn animated"
+                            data-wow-delay=".60s" target="_blank"><i class="fa-brands fa-linkedin" style="margin-right: 5px"></i>
+                            Linkedin</a>
+                        <a href="https://github.com/hamitmizrak" class="btn btn-outline-dark shadow wow bounceIn animated" data-wow-delay=".60s"
+                            target="_blank"><i class="fa-brands fa-github" style="margin-right: 5px"></i>
+                            Github</a
                 </div>
             </div>
         </div>
@@ -240,7 +308,7 @@
                     <div class="row">
                         <div class="col-12 col-md-3 col-xl-4 text-center wow rotateInDownLeft animated"
                             data-wow-delay=".40">
-                            <i class="fa-brands fa-cc-amazon-pay text-center"></i>
+                            <i class="fa-brands fa-cc-amazon-pay text-center text-primary"></i>
                             <h4>E-Ticaret</h4>
                             <p>E-Ticaret Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, totam?</p>
                             <div class="col-12 text-center"><button class="btn btn-outline-primary">More ..</button>
@@ -248,7 +316,7 @@
                         </div>
                         <div class="col-12 col-md-3 col-xl-4 text-center wow rotateInUpLeft animated"
                             data-wow-delay=".50">
-                            <i class="fa-solid fa-chart-pie"></i>
+                            <i class="fa-solid fa-chart-pie text-danger"></i>
                             <h4>Pie</h4>
                             <p>Pie dijital card Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, totam?
                             </p>
@@ -257,7 +325,7 @@
                         </div>
                         <div class="col-12 col-md-3 col-xl-4 text-center wow rotateInDownRight animated"
                             data-wow-delay=".60">
-                            <i class="fa-solid fa-cubes"></i>
+                            <i class="fa-solid fa-cubes text-secondary"></i>
                             <h4>YapBoz</h4>
                             <p>E-Ticaret Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, totam?</p>
                             <div class="col-12 text-center"><button class="btn btn-outline-primary">More ..</button>
@@ -268,6 +336,41 @@
             </div>
         </section>
         <!-- section-10 ends : Icon -->
+
+    <!-- section-2 start -->
+    <!-- section-2 start -->
+    <section id="counter" class="wow fadeIn">
+        <div class="container" style="margin-top: 3rem; margin-bottom: 3rem">
+            <div class="counter-header">
+                <h3>Başarılarımız bakmak ister misiniz ?</h3>
+                <p>Başarı Counter</p>
+            </div>
+    
+            <div class="row counters">
+                <div class="col-lg-3 col-md-6 mx-auto text-center">
+                    <span data-toggle="counter-up">+36.000</span>
+                    <p class="text-center">Çalışma Saati</p>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 mx-auto text-center">
+                    <span data-toggle="counter-up">55</span>
+                    <p class="text-center">Proje</p>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 mx-auto text-center">
+                    <span data-toggle="counter-up">1000.000</span>
+                    <p class="text-center">Satır Kod</p>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 mx-auto text-center">
+                    <span data-toggle="counter-up">100</span>
+                    <p class="text-center">Proje Teslim Edildi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-2 end -->
+    <!-- section-2 end -->
 
         <!-- section-1 start : ability -->
         <section id="ability">
@@ -761,12 +864,23 @@
     </footer>
     <!-- footer-end -->
 
-    <a id="back_top" href="#header" class="btn btn-warning btn-sm"><i
-            class="fa-solid fa-arrow-up-long text-light me-2"></i>TOP </a>
+<!-- BACK TO TOP START -->
+<a id="back_top" href="#header" class="btn btn-sm btn-primary">
+    <i class="fa-solid fa-arrow-up-long text-light"></i>
+</a>
+<!-- BACK TO TOP END -->
+
+
+<!-- Counter JS -->
+<!-- Waypoints JavaScript Libraries -->
+<script src="./experiences/waypoints/waypoints.min.js"></script>
+<!-- Counterup JavaScript Libraries -->
+<script src="./experiences/counterup/counterup.min.js"></script>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
     <!-- External JS -->
     <script src="template.js"></script>
 </body>

@@ -91,3 +91,82 @@ $(function () {
     }
   })//onclick close
 }); //document ready close
+/////////////////////////////////////////////////////////////////
+
+
+/* register value and validation*/
+$(function () {
+  $("#btnSubmit2").click(function () {
+      let registerName, registerEmail, registerPassword;
+      registerName = jQuery.trim($("#register_name").val());
+      registerEmail = jQuery.trim($("#register_email").val());
+      registerPassword = jQuery.trim($("#register_password").val());
+
+      //validation registerName
+      if (registerName == "") {
+          $("#validation_registerName").html("Kullanıcı adı boş geçilemez...")
+      }
+      else if (regexName(registerName) == false) {
+          $("#validation_registerName").html("Kullanıcı adı uygun formatta değil, örnek: türkçe karakter içermemeli")
+      }
+
+      //regex registerName
+      function regexName(registerName) {
+          let regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return regex.test(registerName);
+      }
+
+      //validation registerEmail
+      if (registerEmail == "") {
+          $("#validation_registerEmail").html("Email boş geçilemez...")
+      }
+      else if (regexEmail(registerEmail) == false) {
+          $("#validation_email").html("Uygun formatta email girilmedi, örnek: deneme@gmail.com")
+      }
+
+      //regex email
+      function regexEmail(registerEmail) {
+          let regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return regex.test(registerEmail);
+      }
+
+      //validation registerPassword
+      if (registerPassword == "") {
+          $("#validation_registerPassword").html("şifre boş geçilemez...")
+      }
+      else if (regexPassword(registerPassword) == false) {
+          $("#validation_registerPassword").html("Uygun formatta  şifre girilmedi, örnek: en az 8 karakter")
+      }
+
+      //regex registerPassword
+      function regexPassword(registerPassword) {
+          let regex = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;;
+          return regex.test(registerPassword);
+      }
+
+  }) // onclick close
+}); // document ready close
+
+
+///////////////////////////////////////////////////////////////
+
+// jQuery counterUp (used in Whu Us section)
+$('[data-toggle="counter-up"]').counterUp({
+  delay: 10,
+  time: 1000
+});
+
+
+///////////////////////////////////////////////////////////////
+// Back to top button
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 100) {
+      $('#back_top').fadeIn('slow');
+  } else {
+      $('#back_top').fadeOut('slow');
+  }
+});
+$('#back_top').click(function () {
+  $('html, body').animate({ scrollTop: 0 }, 100, 'easeInOutExpo');
+  return false;
+});
